@@ -1,0 +1,40 @@
+name: Deploy all ontology versions on pages
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+jobs:
+  deploy:                                         # a free machine-readable name for this job
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest                        # specify the base operating system
+    steps:
+      - name: Checkout repo content               # fetch the contents of the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Prepare build environment
+        run: |                                    # multiple Bash commands follow
+          mkdir -p build
+          touch build/.nojekyll
+      - name: Run widoco
+        uses: docker://ghcr.io/fusion-jena/ontology-docs-deployer:main
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload only "out" directory which contains the bundeled widoco versions
+          path: 'out/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
