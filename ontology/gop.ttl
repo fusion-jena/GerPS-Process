@@ -6,6 +6,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @base <https://w3id.org/GerPS-onto/ontology#> .
 
 <https://w3id.org/GerPS-onto/ontology#> rdf:type owl:Ontology ;
@@ -14,7 +15,8 @@
                                          owl:versionInfo 3.0 ;
                                          :author "Jonas Author" ,
                                                  "Leila Feddoul" ,
-                                                 "Maximilian Raupach" .
+                                                 "Maximilian Raupach";
+                                         foaf:depiction "gop_diagram.svg" .
 
 #################################################################
 #    Annotation properties
