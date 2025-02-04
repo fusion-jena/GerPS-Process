@@ -6,6 +6,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix dct: <http://purl.org/dc/terms/>.
 @base <https://w3id.org/GerPS-onto/ontology#> .
 
 <https://w3id.org/GerPS-onto/ontology#> rdf:type owl:Ontology ;
