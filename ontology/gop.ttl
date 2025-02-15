@@ -1,306 +1,291 @@
-@prefix : <https://w3id.org/GerPS-onto/ontology#> .
+@prefix : <https://w3id.org/gerps/ontology/process/> .
+@prefix bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix schema: <https://schema.org/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix dct: <http://purl.org/dc/terms/>.
-@base <https://w3id.org/GerPS-onto/ontology#> .
+@base <https://w3id.org/gerps/ontology/process/> .
 
-<https://w3id.org/GerPS-onto/ontology#> rdf:type owl:Ontology ;
-                                         owl:imports <http://BPMNbasedOntology> ,
-                                                     <http://www.w3.org/ns/prov-o-20130430> ;
-                                         owl:versionInfo 3.0 ;
-                                         :author "Jonas Author" ,
-                                                 "Leila Feddoul" ,
-                                                 "Maximilian Raupach";
-                                         dct:description "![Diagram](gop_diagram.svg)"@de .
+<https://w3id.org/gerps/ontology/process> rdf:type owl:Ontology ;
+                                                owl:versionIRI <https://w3id.org/gerps/ontology/process/4.0/> ;
+                                                owl:imports <http://www.w3.org/ns/prov-o-20130430> ;
+                                                dct:abstract "Ontologie für den Transfer von FIM(Föderales Informationsmanagement)-Informationen, insbesondere von Formularen, und den darin gespeicherten Daten , die von der öffentlichen Verwaltung verwendet wird um Dienste anzubieten. Zu diesem Zweck bildet die Ontologie den XDatenfeld-Standard ab."@de ,
+                                                             "Ontology used for transferring FIM(Federal Information Management)-information, specifically the processes involved in offering public services. To achieve this, it maps the XProzess-standard."@en ;
+                                                dct:contributor "Heinz Conti Zacherl" ,
+                                                                "Jonas Hoyer" ,
+                                                                "Leila Feddoul" ,
+                                                                "Maximilian Enderling" ,
+                                                                "Maximilian Raupach" ;
+                                                dct:creator "openDVA" ;
+                                                dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+                                                dct:modified "2025-02-14"^^xsd:date ;
+                                                dct:title "GerPS-Process"@en ,
+                                                          "GerPS-Prozess"@de ;
+                                                vann:preferredNamespacePrefix "gop"@en ;
+                                                vann:preferredNamespaceUri "https://w3id.org/gerps/ontology/process" ;
+                                                owl:priorVersion <https://w3id.org/gerps/ontology/process/3.0/> ;
+                                                dct:description "![Diagram](gop_diagram.svg)" ;
+                                                owl:versionInfo "4.0" ;
+                                                schema:citation "Cite this vocabulary as: openDVA, GerPS-Process 4.0"@en ,
+                                                                "Zitieren Sie dieses Vokabular als: openDVA, GerPS-Process 4.0"@de .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  https://w3id.org/GerPS-onto/ontology#Version
-:Version rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/abstract
+dct:abstract rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/GerPS-onto/ontology#author
-:author rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/terms/contributor
+dct:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dct:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/citation
+schema:citation rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://BPMNbasedOntology#has_process
-<http://BPMNbasedOntology#has_process> rdf:type owl:ObjectProperty .
-
-
-###  http://BPMNbasedOntology#has_resource
-<http://BPMNbasedOntology#has_resource> rdf:type owl:ObjectProperty .
-
-
-###  http://BPMNbasedOntology#has_sourceRef
-<http://BPMNbasedOntology#has_sourceRef> rdf:type owl:ObjectProperty ;
-                                         rdfs:subPropertyOf owl:topObjectProperty .
-
-
-###  http://BPMNbasedOntology#has_targetRef
-<http://BPMNbasedOntology#has_targetRef> rdf:type owl:ObjectProperty .
-
-
-###  http://BPMNbasedOntology#is_attachedToRef
-<http://BPMNbasedOntology#is_attachedToRef> rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/GerPS-onto/ontology#GERPSP001
-:GERPSP001 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000021
+:GPP_0000021 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE011 ;
-           rdfs:range :GERPSE006 ;
-           rdfs:comment "Shows the legal basis of a process step."@en ;
-           rdfs:label "based on"@en ,
-                      "basiert auf"@de .
+           rdfs:domain :GPP_0000006 ;
+           rdfs:range :GPP_0000003 ;
+           rdfs:comment "Links a process step to its legal basis."@en ,
+                        "Verknüpft einen Prozessschritt mit seiner Rechtsgrundlage."@de ;
+           rdfs:label "has legal basis"@en ,
+                      "hat die Rechtsgrundlage"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP005
-:GERPSP005 rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://BPMNbasedOntology#has_process> ;
-           rdfs:domain :GERPSE008 ;
-           rdfs:range :GERPSE010 ;
-           rdfs:comment "Show the processes of a service."@en ;
-           rdfs:label "has process"@en ,
-                      "hat Prozess"@de .
+###  https://w3id.org/gerps/ontology/process/GPP_0000022
+:GPP_0000022 rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf bbo:has_process ;
+           rdfs:domain :GPP_0000004 ;
+           rdfs:range :GPP_0000005 ;
+           rdfs:comment "Links a service to a process involved in offering it."@en ,
+                        "Verknüpft eine Leistung mit einem Prozess, der mit ihrem Angebot verbunden ist."@de ;
+           rdfs:label "has backing process"@en ,
+                      "hat verbundenen Prozess"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP006
-:GERPSP006 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000023
+:GPP_0000023 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE010 ;
-           rdfs:range :GERPSE011 ;
-           rdfs:comment "Show the connects the process with its process steps."@en ;
-           rdfs:label "has processstep"@en ,
+           rdfs:domain :GPP_0000005 ;
+           rdfs:range :GPP_0000006 ;
+           rdfs:comment "Links a process with an associated process step"@en ,
+                        "Verknüpft einen Prozess mit einem dazugehörigen Prozessschritt."@de ;
+           rdfs:label "has process step"@en ,
                       "hat Prozessschritt"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP008
-:GERPSP008 rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf <http://BPMNbasedOntology#has_resource> ;
-           rdfs:domain :GERPSE011 ;
-           rdfs:range <http://BPMNbasedOntology#Resource> ;
-           rdfs:comment "Show the resource a process step should procces."@en ;
-           rdfs:label "has resource"@en ,
-                      "hat Ressource"@de .
+###  https://w3id.org/gerps/ontology/process/GPP_0000024
+:GPP_0000024 rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf bbo:has_resource ;
+           rdfs:domain :GPP_0000006 ;
+           rdfs:range bbo:Resource ;
+           rdfs:comment "Links a process step with the resources used for it."@en ,
+                        "Verknüpft einen Prozessschritt mit den dafür verwendeten Ressourcen."@de ;
+           rdfs:label "uses resource"@en ,
+                      "verwendet Ressource"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP009
-:GERPSP009 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000025
+:GPP_0000025 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE011 ;
-           rdfs:range :GERPSE023 ;
-           rdfs:comment "Show the type of a process step."@en ;
-           rdfs:label "has type"@en ,
-                      "hat Typ"@de .
+           rdfs:domain :GPP_0000006 ;
+           rdfs:range :GPP_0000014 ;
+           rdfs:comment "Links a process step to the type of work it involves."@en ,
+                        "Verknüpft einen Prozessschritt mit der Art der Arbeit, die er beinhaltet."@de ;
+           rdfs:label "has task type"@en ,
+                      "hat Aufgabentyp"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP012
-:GERPSP012 rdf:type owl:ObjectProperty ;
-           rdfs:domain :GERPSE017 .
-
-
-###  https://w3id.org/GerPS-onto/ontology#GERPSP017
-:GERPSP017 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000031
+:GPP_0000031 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE023 ;
-           rdfs:range :GERPSE020 ;
-           rdfs:label "Shows that a type has a specific attribute." ,
-                      "has attribute"@en ,
-                      "hat Attribute"@de .
+           rdfs:domain :GPP_0000014 ;
+           rdfs:range :GPP_0000011 ;
+           rdfs:comment "Links a process step to an attribute that describes it in more detail."@en ,
+                        "Verknüpft einen Prozessschritt mit einem Attribut, das ihn näher beschreibt."@de ;
+           rdfs:label "has attribute"@en ,
+                      "hat Attribut"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP018
-:GERPSP018 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000032
+:GPP_0000032 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE024 ;
-           rdfs:range :GERPSE018 ;
-           rdfs:label "Shows that a standard activity group has a task collection."@en ,
-                      "has task collection"@en ,
+           rdfs:domain :GPP_0000015 ;
+           rdfs:range :GPP_0000009 ;
+           rdfs:comment "Links a standard activity group to a collection of process specific tasks."@en ,
+                        "Verknüpft eine Standardaktivitätengruppe mit einer Sammlung von prozessspezifischen Aufgaben."@de ;
+           rdfs:label "has task collection"@en ,
                       "hat Aufgabensammlung"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP019
-:GERPSP019 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000033
+:GPP_0000033 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE018 ;
-           rdfs:range <http://BPMNbasedOntology#Task> ;
-           rdfs:comment "Connects a task collection with its specific tasks."@en ;
+           rdfs:domain :GPP_0000009 ;
+           rdfs:range bbo:Task ;
+           rdfs:comment "Connects a task collection with its specific tasks."@en ,
+                        "Verknüpft eine Aufgabensammlung mit ihren spezifischen Aufgaben."@de ;
            rdfs:label "has process task"@en ,
                       "hat Prozessaufgabe"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP020
-:GERPSP020 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000020
+:GPP_0000020 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE023 ;
-           rdfs:range :GERPSE010 ;
-           rdfs:comment "Connects a typ of a process step with its process."@en ;
-           rdfs:label "Prozessreferenzierung"@de ,
-                      "process reference"@en .
+           rdfs:domain :GPP_0000014 ;
+           rdfs:range :GPP_0000005 ;
+           rdfs:comment "Links a activity group to a process."@en ,
+                        "Verknüpft eine Aktivitätsgruppe mit einem Prozess."@de ;
+           rdfs:label "belongs to process"@en ,
+                      "gehört zu Prozess"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP021
-:GERPSP021 rdf:type owl:ObjectProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000019
+:GPP_0000019 rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE018 ;
-           rdfs:range :GERPSE011 ;
-           rdfs:label "Prozessschrittreferenzierung"@de ,
-                      "Referenz from a Task collection to its process step."@en ,
-                      "process step reference"@en .
+           rdfs:domain :GPP_0000009 ;
+           rdfs:range :GPP_0000006 ;
+           rdfs:comment "Verknüpft eine Aufgabensammlung mit einem Prozessschritt."@de ;
+           rdfs:label "Links a task collection to a process step."@en ,
+                      "belongs to process step"@en ,
+                      "gehört zu Prozessschritt"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP023
-:GERPSP023 rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf owl:topObjectProperty ;
-           rdfs:domain :GERPSE019 ;
-           rdfs:range :GERPSE027 ;
-           rdfs:comment "Connets a decision model with an engine where it can be executed."@en ;
-           rdfs:label "is executed of"@en ,
-                      "wird ausgeführt von"@de .
-
-
-###  https://w3id.org/GerPS-onto/ontology#GERPSP024
-:GERPSP024 rdf:type owl:ObjectProperty ;
-           rdfs:domain :GERPSE023 ;
-           rdfs:range :GERPSE023 ;
-           rdfs:comment "Is a referenz from a type to the type is derived from"@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000018
+:GPP_0000018 rdf:type owl:ObjectProperty ;
+           rdfs:domain :GPP_0000014 ;
+           rdfs:range :GPP_0000014 ;
+           rdfs:comment "Links a process step to a more abstract process step from which it was derived."@en ,
+                        "Verknüpft einen Prozessschritt mit einem abstrakteren Prozessschritt, von dem er abgeleitet wurde."@de ;
            rdfs:label "abgeleitet von"@de ,
                       "derived from"@en .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_process
+bbo:has_process rdf:type owl:ObjectProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resource
+bbo:has_resource rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://BPMNbasedOntology#id
-<http://BPMNbasedOntology#id> rdf:type owl:DatatypeProperty .
-
-
-###  http://BPMNbasedOntology#name
-<http://BPMNbasedOntology#name> rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/GerPS-onto/ontology#GERPSP010
-:GERPSP010 rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf :GERPSP015 ;
-           rdfs:domain :GERPSE004 ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000026
+:GPP_0000026 rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :GPP_0000029 ;
+           rdfs:domain :GPP_0000002 ;
            rdfs:range xsd:dateTime ;
-           rdfs:comment "Submission deadlines are tied to documents and specify a time period in which a document must be submitted"@en ;
+           rdfs:comment "Einreichungsfristen sind an Dokumente gebunden und geben einen Zeitraum an, innerhalb dessen ein Dokument eingereicht werden muss."@de ,
+                        "Submission deadlines are tied to documents and specify a time period in which a document must be submitted."@en ;
            rdfs:label "has submission deadline"@en ,
                       "hat Abgabefrist"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP011
-:GERPSP011 rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf :GERPSP015 ;
-           rdfs:domain :GERPSE010 ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000027
+:GPP_0000027 rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :GPP_0000029 ;
+           rdfs:domain :GPP_0000005 ;
            rdfs:range xsd:dateTime ;
-           rdfs:comment "Deadline of a Service to be processed."@en ;
+           rdfs:comment "Bearbeitungsfristen sind an Prozesse gebunden und geben den Zeitpunkt an, bis zu denen der Prozess abschließend bearbeitet sein muss."@en ,
+                        "Processing deadlines are linked to processes and specify the time by which the process must be completed."@de ;
            rdfs:label "has processing deadline"@en ,
                       "hat Bearbeitungsfrist"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP012
-:GERPSP012 rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf <http://BPMNbasedOntology#id> ;
-           rdfs:range xsd:string .
+###  https://w3id.org/gerps/ontology/process/GPP_0000028
+:GPP_0000028 rdf:type owl:DatatypeProperty ;
+           rdfs:comment "Eindeutiger Bezeichner für Datenfelder."@de ,
+                        "Unique identifier for data fields."@en ;
+           rdfs:label "has data field ID"@en ,
+                      "hat Datenfeld-ID"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP015
-:GERPSP015 rdf:type owl:DatatypeProperty ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000029
+:GPP_0000029 rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf owl:topDataProperty ;
            rdfs:range xsd:dateTime ;
-           rdfs:comment "Processing deadlines are tied to processes and define a period of time in which the execution of a process must be completed."@en ;
+           rdfs:comment "Bearbeitungsfristen sind an Prozesse gebunden und legen eine Zeitspanne fest, in der die Ausführung eines Prozesses abgeschlossen sein muss."@de ,
+                        "Processing deadlines are tied to processes and define a period of time in which the execution of a process must be completed."@en ;
            rdfs:label "has deadline"@en ,
                       "hat Frist"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSP016
-:GERPSP016 rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf <http://BPMNbasedOntology#id> ;
-           rdfs:domain :GERPSE008 ;
-           rdfs:range xsd:string ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000030
+:GPP_0000030 rdf:type owl:DatatypeProperty ;
            rdfs:comment "The LeiKaID describes the unique identifier for administrative services defined by the service catalog."@en ;
            rdfs:label "has LeiKa-ID"@en ,
                       "hat LeiKa-ID"@de .
+
+:GPP_0000034 rdf:type owl:DatatypeProperty ;
+           rdfs:domain :GPP_0000005 ;
+           rdfs:range xsd:string ;
+           rdfs:comment "The process is described in a BPMN file, which is not stored in the knowledge graph directly, but can be accessed using the associated digest. The digest is a hash value, created using e.g. MD5."@en ,
+                        "Der Prozess wird in einer BPMN-Datei beschrieben, die nicht direkt im Wissensgraphen gespeichert ist, sondern auf die über den zugehörigen Digest zugegriffen werden kann. Der Digest ist ein Hash-Wert, der z. B. mit MD5 erstellt wird."@de ;
+           rdfs:label "has a BPMN file with digest"@en ,
+                      "hat ein BPMN-Datei mit hash"@de .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#id
+bbo:id rdf:type owl:DatatypeProperty .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#name
+bbo:name rdf:type owl:DatatypeProperty .
 
 
 #################################################################
 #    Classes
 #################################################################
-
-###  http://BPMNbasedOntology#Activity
-<http://BPMNbasedOntology#Activity> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#Agent
-<http://BPMNbasedOntology#Agent> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#BoundaryEvent
-<http://BPMNbasedOntology#BoundaryEvent> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#CallActivity
-<http://BPMNbasedOntology#CallActivity> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#DataResource
-<http://BPMNbasedOntology#DataResource> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#DocumentResource
-<http://BPMNbasedOntology#DocumentResource> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#EndEvent
-<http://BPMNbasedOntology#EndEvent> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#ExclusiveGateway
-<http://BPMNbasedOntology#ExclusiveGateway> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#ParallelGateway
-<http://BPMNbasedOntology#ParallelGateway> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#Process
-<http://BPMNbasedOntology#Process> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#Resource
-<http://BPMNbasedOntology#Resource> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#SequenceFlow
-<http://BPMNbasedOntology#SequenceFlow> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#StartEvent
-<http://BPMNbasedOntology#StartEvent> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#SubProcess
-<http://BPMNbasedOntology#SubProcess> rdf:type owl:Class .
-
-
-###  http://BPMNbasedOntology#Task
-<http://BPMNbasedOntology#Task> rdf:type owl:Class ;
-                                rdfs:subClassOf :GERPSE023 .
-
 
 ###  http://data.europa.eu/eli/ontology#LegalResource
 <http://data.europa.eu/eli/ontology#LegalResource> rdf:type owl:Class .
@@ -333,228 +318,197 @@
 
 ###  http://www.w3.org/ns/org#LegalEntity
 <http://www.w3.org/ns/org#LegalEntity> rdf:type owl:Class ;
-                                       rdfs:comment "A self-empoyed person, company, or organization that has legal rights and obligations."@en .
+                                       rdfs:comment "A self-employed person, company, or organization that has legal rights and obligations."@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE001
-:GERPSE001 rdf:type owl:Class ;
-           rdfs:subClassOf <http://BPMNbasedOntology#Agent> ,
-                           prov:Agent ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#id> ;
-                             owl:someValuesFrom xsd:string
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#name> ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "An actor is a participant in the administrative process and assumes the role of either the result receiver, the contributor, or the main actor."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000001
+:GPP_0000001 rdf:type owl:Class ;
+           rdfs:subClassOf prov:Agent ,
+                           bbo:Agent ;
+           rdfs:comment "A participant in a process who assumes a specific role."@en ,
+                        "Ein Teilnehmer an einem Prozess, der eine bestimmte Rolle einnimmt."@en ;
            rdfs:label "Actor"@en ,
                       "Akteur"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE004
-:GERPSE004 rdf:type owl:Class ;
-           rdfs:subClassOf <http://BPMNbasedOntology#DocumentResource> ,
-                           <http://data.europa.eu/m8g/Evidence> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#id> ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "Documents are exchanged between actors and are the subject of a process step."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000002
+:GPP_0000002 rdf:type owl:Class ;
+           rdfs:subClassOf <http://data.europa.eu/m8g/Evidence> ,
+                           bbo:DocumentResource ;
+           rdfs:comment "Documents are exchanged between actors and are the subject of a process step."@en ,
+                        "Dokumente werden zwischen Akteuren ausgetauscht und sind Gegenstand eines Prozessschrittes."@de ;
            rdfs:label "Document"@en ,
                       "Dokument"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE006
-:GERPSE006 rdf:type owl:Class ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000003
+:GPP_0000003 rdf:type owl:Class ;
            rdfs:subClassOf <http://data.europa.eu/eli/ontology#LegalResource> ;
-           rdfs:comment "Legal bases are references to already existing laws."@en ;
+           rdfs:comment "References to legislative texts."@en ,
+                        "Verweise auf Gesetzestexte."@de ;
            rdfs:label "Handlungsgrundlage"@de ,
                       "Legal basis"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE008
-:GERPSE008 rdf:type owl:Class ;
-           rdfs:subClassOf <http://purl.org/vocab/cpsv#PublicService> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP005 ;
-                             owl:someValuesFrom :GERPSE010
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#name> ;
-                             owl:someValuesFrom xsd:string
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP016 ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "Services describe the actions of public administrations."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000004
+:GPP_0000004 rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/cpsv#PublicService> ;
+           rdfs:comment "A service offered by public administration."@en ,
+                        "Eine von der öffentlichen Verwaltung angebotene Dienstleistung."@de ;
            rdfs:label "Leistung"@de ,
                       "Service"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE010
-:GERPSE010 rdf:type owl:Class ;
-           rdfs:subClassOf <http://BPMNbasedOntology#Activity> ,
-                           <http://BPMNbasedOntology#Process> ,
-                           <http://purl.org/vocab/cpsv#Rule> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP006 ;
-                             owl:someValuesFrom :GERPSE011
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#id> ;
-                             owl:someValuesFrom xsd:string
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#name> ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "Processes describe administrative procedures that are processed by specific persons in a repetitive sequence under concrete specifications (e.g., legal and administrative regulations) and with the use of aids (e.g., forms)."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000005
+:GPP_0000005 rdf:type owl:Class ;
+           rdfs:subClassOf <http://purl.org/vocab/cpsv#Rule> ,
+                           bbo:Process ;
+           rdfs:comment "Administrative procedures that are carried out by in a fixed sequence under concrete specifications (e.g., legal and administrative regulations) and with the use of aids (e.g., forms)."@en ,
+                        "Verwaltungsvorgänge, die nach konkreten Vorgaben (z.B. Rechts- und Verwaltungsvorschriften) und unter Verwendung von Hilfsmitteln (z.B. Formularen) in einer festgelegten Reihenfolge durchgeführt werden."@de ;
            rdfs:label "Process"@en ,
                       "Prozess"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE011
-:GERPSE011 rdf:type owl:Class ;
-           rdfs:subClassOf <http://BPMNbasedOntology#Task> ,
-                           prov:Activity ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP001 ;
-                             owl:allValuesFrom :GERPSE006
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP008 ;
-                             owl:allValuesFrom <http://BPMNbasedOntology#Resource>
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP009 ;
-                             owl:allValuesFrom :GERPSE023
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#id> ;
-                             owl:someValuesFrom xsd:string
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#name> ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "Process steps describe actions or activities of the public administrations or actors."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000006
+:GPP_0000006 rdf:type owl:Class ;
+           rdfs:subClassOf prov:Activity ,
+                           bbo:Task ;
+           rdfs:comment "Einzelne Aktionen oder Aktivitäten, die als Teil eines Prozesses durchgeführt werden."@de ,
+                        "Individual actions or activities that are performed as part of a process."@en ;
            rdfs:label "Process step"@en ,
                       "Prozessschritt"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE012
-:GERPSE012 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE023 ;
-           rdfs:comment "Reference activity groups can be derived from concrete specifications (e.g., legal and administrative regulations), can bundle thematically related process elements, and reflect the process of service execution."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000007
+:GPP_0000007 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000014 ;
+           rdfs:comment "Activity groups are standardized types of tasks, with similar tasks being grouped together. They are further described by standardized attributes, with some atributes being specified."@en ,
+                        "Tätigkeitsgruppen sind standardisierte Aufgabentypen, die ähnliche Aufgaben thematisch gruppieren und mit standardisierten Attributen beschreiben."@de ;
            rdfs:label "Reference activity group"@en ,
                       "Referenzaktivitätengruppe"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE017
-:GERPSE017 rdf:type owl:Class ;
-           rdfs:subClassOf <http://BPMNbasedOntology#DataResource> ,
-                           <http://data.europa.eu/m8g/Evidence> ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty :GERPSP012 ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:comment "Data fields are required components in the construction of forms."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000008
+:GPP_0000008 rdf:type owl:Class ;
+           rdfs:subClassOf <http://data.europa.eu/m8g/Evidence> ,
+                           bbo:DataResource ;
+           rdfs:comment "Einzelne Elemente in Formularen, die zur Speicherung von Informationen verwendet werden."@de ,
+                        "Individual items in forms, used to store information."@en ;
            rdfs:label "Data field"@en ,
                       "Datenfeld"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE018
-:GERPSE018 rdf:type owl:Class ;
-           rdfs:comment "Is  a collection of process specific tasks."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000009
+:GPP_0000009 rdf:type owl:Class ;
+           rdfs:comment "A collection of mutliple process steps."@en ,
+                        "Eine Sammlung von Prozessschritten." ;
            rdfs:label "Aufgabensammlung"@de ,
                       "task collection"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE019
-:GERPSE019 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE020 ;
-           rdfs:comment "Is a Way to specify, how a decision can be accomplished."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000010
+:GPP_0000010 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000011 ;
+           rdfs:comment "Gibt an, wie eine Entscheidung getroffen wird, d.h. unter Verwendung eines formalen Entscheidungsmodells."@de ,
+                        "Specifies how a decision is made, i.e. using a formal decision model."@en ;
            rdfs:label "Entscheidungsmodell"@de ,
                       "decision model"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE020
-:GERPSE020 rdf:type owl:Class ;
-           rdfs:comment "Is a Attribute of a specific typ. It can be specified or not."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000011
+:GPP_0000011 rdf:type owl:Class ;
+           rdfs:comment "Eigenschaft eines Prozesses, die bestimmte Aspekte eines Prozesses spezifiziert."@de ,
+                        "Property of a process, which specifies certain aspects of a process."@en ;
            rdfs:label "Attribut"@de ,
                       "attribute"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE021
-:GERPSE021 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE023 ;
-           rdfs:comment "Is a typ where are all attributes specified."@en ;
-           rdfs:label "Aktivitätengruppe"@de ,
-                      "activity group"@en .
+###  https://w3id.org/gerps/ontology/process/GPP_0000012
+:GPP_0000012 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000014 ;
+           rdfs:comment "Activity groups are standardized types of tasks, with similar tasks being grouped together. They are further described by standardized attributes, with some attributes being specified."@en ,
+                        "Tätigkeitsgruppen sind standardisierte Aufgabentypen, wobei ähnliche Aufgaben in Gruppen zusammengefasst werden. Sie werden außerdem durch standardisierte Attribute beschrieben, wobei alle Attribute angegeben werden."@de ;
+           rdfs:label "Activity group"@en ,
+                      "Aktivitätengruppe"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE022
-:GERPSE022 rdf:type owl:Class ;
-           rdfs:comment "Is a task, that is executed in a process."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000013
+:GPP_0000013 rdf:type owl:Class ;
+           rdfs:comment "Das Ziel, das mit einem Prozess erreicht werden soll."@de ,
+                        "The goal that a process is tasked to achieve."@en ;
            rdfs:label "Prozessaufgabe"@de ,
                       "process task"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE023
-:GERPSE023 rdf:type owl:Class ;
-           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#id> ;
-                             owl:someValuesFrom xsd:string
-                           ] ,
-                           [ rdf:type owl:Restriction ;
-                             owl:onProperty <http://BPMNbasedOntology#name> ;
-                             owl:someValuesFrom xsd:string
-                           ] ;
-           rdfs:label "Is a Type of a process step, that specifies what to do."@en ,
-                      "Typ"@de ,
-                      "type"@en .
+###  https://w3id.org/gerps/ontology/process/GPP_0000014
+:GPP_0000014 rdf:type owl:Class ;
+           rdfs:comment "Tätigkeitsgruppen sind standardisierte Aufgabentypen, wobei ähnliche Aufgaben in Gruppen zusammengefasst werden. Sie werden außerdem durch standardisierte Attribute beschrieben."@de ;
+           rdfs:label "Activity groups are standardized types of tasks, with similar tasks being grouped together. They are further described by standardized attributes."@en ,
+                      "Ungetypte Aktivitätengruppe"@de ,
+                      "Untyped activity group"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE024
-:GERPSE024 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE023 ;
-           rdfs:comment "Is a Typ with some specified attributes."@en ;
-           rdfs:label "Standardaktivitätengruppe"@de ,
-                      "standard activity group"@en .
+###  https://w3id.org/gerps/ontology/process/GPP_0000015
+:GPP_0000015 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000014 ;
+           rdfs:comment "Activity groups are standardized types of tasks, with similar tasks being grouped together. They are further described by standardized attributes, with no atributes being specified."@en ,
+                        "Tätigkeitsgruppen sind standardisierte Aufgabentypen, wobei ähnliche Aufgaben in Gruppen zusammengefasst werden. Sie werden außerdem durch standardisierte Attribute beschrieben, wobei keine Attribute angegeben werden."@de ;
+           rdfs:label "Standard activity group"@en ,
+                      "Standardaktivitätengruppe"@de .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE025
-:GERPSE025 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE019 ;
-           rdfs:comment "Decision modelling notation is a way to specify how decision can be accomplished."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000016
+:GPP_0000016 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000010 ;
+           rdfs:comment "Gibt an, wie eine Entscheidung getroffen wird, d. h. eine Entscheidung, die unter Verwendung der \"Decision Modelling Notation\" modelliert wurde."@de ,
+                        "Specifies how a decision is made, i.e. a decision modeled using the Decision Modelling Notation."@en ;
            rdfs:label "DMN"@de ,
                       "DMN"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE026
-:GERPSE026 rdf:type owl:Class ;
-           rdfs:subClassOf :GERPSE019 ;
-           rdfs:comment "Rulemaps are ways to specify how decision are accomplished."@en ;
+###  https://w3id.org/gerps/ontology/process/GPP_0000017
+:GPP_0000017 rdf:type owl:Class ;
+           rdfs:subClassOf :GPP_0000010 ;
+           rdfs:comment "Specifies how a decision is made, i.e. a decision modeled using Rulemapping."@en ,
+                        "Gibt an, wie eine Entscheidung getroffen wird, d. h. eine Entscheidung, die mithilfe von Rulemapping modelliert wurde." ;
            rdfs:label "RuleMap"@de ,
                       "RuleMap"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE027
-:GERPSE027 rdf:type owl:Class ;
-           rdfs:comment "An egnine that executs an a decision, using and decision model."@en ;
-           rdfs:label "Ausführungsumgebung"@de ,
-                      "Execution engine"@en .
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Activity
+bbo:Activity rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Agent
+bbo:Agent rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DataResource
+bbo:DataResource rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#DocumentResource
+bbo:DocumentResource rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Process
+bbo:Process rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Resource
+bbo:Resource rdf:type owl:Class .
+
+
+###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Task
+bbo:Task rdf:type owl:Class .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE005
-:GERPSE005 rdf:type owl:NamedIndividual ,
+###  https://w3id.org/gerps/ontology/process/GERPSE005
+:GPP_E0000005 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/org#LegalEntity> ,
                     prov:Role ;
            rdfs:comment "A result receiver is a person or company that benefits from the administrative service."@en ;
@@ -562,31 +516,23 @@
                       "Result receiver"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE007
-:GERPSE007 rdf:type owl:NamedIndividual ,
+###  https://w3id.org/gerps/ontology/process/GERPSE007
+:GPP_E0000007 rdf:type owl:NamedIndividual ,
                     <http://data.europa.eu/m8g/PublicOrganisation> ,
                     prov:Role ;
-           rdfs:comment "The main actor is a public authority responsible for service delivery."@en ;
+           rdfs:comment "The main actor is the public authority responsible to offer a certain public service."@en ;
            rdfs:label "Hauptakteur"@de ,
                       "Main actor"@en .
 
 
-###  https://w3id.org/GerPS-onto/ontology#GERPSE009
-:GERPSE009 rdf:type owl:NamedIndividual ,
+###  https://w3id.org/gerps/ontology/process/GERPSE009
+:GPP_E0000009 rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/org#FormalOrganization> ,
                     prov:Role ;
-           rdfs:comment "Contributors are external public authorities that are involved in the administrative service."@en ;
+           rdfs:comment "Contributors are external public authorities that are involved in the processing of public services."@en ,
+                        "Mitwirkende sind externe öffentliche Behörden, die an der Abwicklung von öffentlichen Dienstleistungen beteiligt sind."@de ;
            rdfs:label "Contributor"@en ,
                       "Mitwirkender"@de .
 
 
-#################################################################
-#    Annotations
-#################################################################
-
-:GERPSP012 rdfs:comment "The data field ID describes the unique identifier for data fields."@en ;
-           rdfs:label "has data field ID"@en ,
-                      "hat Datenfeld-ID"@de .
-
-
-###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

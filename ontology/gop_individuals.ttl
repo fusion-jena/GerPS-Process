@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/GerPS-onto/ontology#> .
+@prefix : <https://w3id.org/gerps/ontology/process/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -6,7 +6,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
-@base <https://w3id.org/GerPS-onto/ontology#> .
+@base <https://w3id.org/gerps/ontology/process/> .
 
 #################################################################
 #    Individuals
@@ -14,7 +14,7 @@
 
 ###  http://www.gesetze-im-internet.de/muschg_2018/__27.html
 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> rdf:type owl:NamedIndividual ,
-                                                                   :GERPSE006 ;
+                                                                   :GPP_0000003 ;
                                                           <http://BPMNbasedOntology#name> "§ 27 (1) - (4) MuSchG" ,
                                                                                           "§ 27 (1) MuSchG" ,
                                                                                           "§ 27 (1) MuSchG " ,
@@ -31,7 +31,7 @@
 
 ###  http://www.gesetze-im-internet.de/muschg_2018/__29.html
 <http://www.gesetze-im-internet.de/muschg_2018/__29.html> rdf:type owl:NamedIndividual ,
-                                                                   :GERPSE006 ;
+                                                                   :GPP_0000003 ;
                                                           <http://BPMNbasedOntology#name> "§ 29 (3) MuSchG" ,
                                                                                           "§ 29 MuSchG" ;
                                                           rdfs:label "§ 29 (3) MuSchG" ,
@@ -40,15 +40,15 @@
 
 ###  http://www.gesetze-im-internet.de/muschg_2018/__32.html
 <http://www.gesetze-im-internet.de/muschg_2018/__32.html> rdf:type owl:NamedIndividual ,
-                                                                   :GERPSE006 ;
+                                                                   :GPP_0000003 ;
                                                           <http://BPMNbasedOntology#name> "§ 32 MuSchG" ;
                                                           rdfs:label "§ 32 MuSchG" .
 
 
 ###  https://w3id.org/GerPS-onto/ontology#BenachrichtigunguberdieBeschaftigungeinerschwangerenoderstillendenFrau
 :BenachrichtigunguberdieBeschaftigungeinerschwangerenoderstillendenFrau rdf:type owl:NamedIndividual ,
-                                                                                 :GERPSE017 ;
-                                                                        :GERPSP012 "Benachrichtigung über die Beschäftigung einer schwangeren oder stillenden Frau" .
+                                                                                 :GPP_0000008 ;
+                                                                        :GPP_0000028 "Benachrichtigung über die Beschäftigung einer schwangeren oder stillenden Frau" .
 
 
 ###  https://w3id.org/GerPS-onto/ontology#GERPSE005
@@ -131,7 +131,7 @@
 
 ###  https://w3id.org/GerPS-onto/ontology#S00000094
 :S00000094 rdf:type owl:NamedIndividual ,
-                    :GERPSE017 .
+                    :GPP_0000008 .
 
 
 ###  https://w3id.org/GerPS-onto/ontology#_39239818-2743-4f19-9e03-89d271189b85
@@ -154,11 +154,11 @@
 
 ###  https://w3id.org/GerPS-onto/ontology#process_99006028261000_8eafac98-90cd-3c6d-9734-be1f7148df28
 :process_99006028261000_8eafac98-90cd-3c6d-9734-be1f7148df28 rdf:type owl:NamedIndividual ,
-                                                                      :GERPSE010 ;
+                                                                      :GPP_0000005 ;
                                                              prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ,
                                                                                        :QA99006028261000_4e56a483-ecbe-4104-a63c-3c63cbb55e2d ,
                                                                                        :QA99006028261000_acad2737-c516-4d97-8dfd-45605e058d86 ;
-                                                             :GERPSP006 <https://w3id.org/GerPS-onto/ontology#99006028261000_0facbbd5-88a0-4989-aaf4-d38437a69ba2> ,
+                                                             :GPP_0000023 <https://w3id.org/GerPS-onto/ontology#99006028261000_0facbbd5-88a0-4989-aaf4-d38437a69ba2> ,
                                                                         <https://w3id.org/GerPS-onto/ontology#99006028261000_1169fb06-dae2-43c5-83fd-8e9a241f5a3c> ,
                                                                         <https://w3id.org/GerPS-onto/ontology#99006028261000_28441394-6afd-4633-8f4f-6cce9cd4ffc9> ,
                                                                         <https://w3id.org/GerPS-onto/ontology#99006028261000_3a5bc1b5-61f4-4d4c-af7f-b1728f919b38> ,
@@ -507,10 +507,10 @@
 
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000
 <https://w3id.org/GerPS-onto/ontology#99006028261000> rdf:type owl:NamedIndividual ,
-                                                               :GERPSE008 ;
-                                                      :GERPSP005 :process_99006028261000_8eafac98-90cd-3c6d-9734-be1f7148df28 ;
+                                                               :GPP_0000004 ;
+                                                      :GPP_0000022 :process_99006028261000_8eafac98-90cd-3c6d-9734-be1f7148df28 ;
                                                       <http://BPMNbasedOntology#name> "Anzeige zur Beschäftigung einer schwangeren oder stillenden Frau bearbeiten" ;
-                                                      :GERPSP016 "99006028261000" ;
+                                                      :GPP_0000030 "99006028261000" ;
                                                       rdfs:label "Anzeige zur Beschäftigung einer schwangeren oder stillenden Frau bearbeiten" .
 
 
@@ -525,11 +525,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_0facbbd5-88a0-4989-aaf4-d38437a69ba2
 <https://w3id.org/GerPS-onto/ontology#99006028261000_0facbbd5-88a0-4989-aaf4-d38437a69ba2> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG2 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG2 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_0facbbd5-88a0-4989-aaf4-d38437a69ba2" ;
                                                                                            <http://BPMNbasedOntology#name> "Überwachungsmaßnahmen einleiten" ;
                                                                                            rdfs:label "Überwachungsmaßnahmen einleiten" .
@@ -538,11 +538,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_1169fb06-dae2-43c5-83fd-8e9a241f5a3c
 <https://w3id.org/GerPS-onto/ontology#99006028261000_1169fb06-dae2-43c5-83fd-8e9a241f5a3c> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG4 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG4 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_1169fb06-dae2-43c5-83fd-8e9a241f5a3c" ;
                                                                                            <http://BPMNbasedOntology#name> "Notwendigkeit von Überwachungsmaßnahmen prüfen" ;
                                                                                            rdfs:label "Notwendigkeit von Überwachungsmaßnahmen prüfen" .
@@ -551,11 +551,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_28441394-6afd-4633-8f4f-6cce9cd4ffc9
 <https://w3id.org/GerPS-onto/ontology#99006028261000_28441394-6afd-4633-8f4f-6cce9cd4ffc9> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <https://www.gesetze-im-internet.de/vwvfg/__3.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG3 ;
+                                                                                           :GPP_0000021 <https://www.gesetze-im-internet.de/vwvfg/__3.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG3 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_28441394-6afd-4633-8f4f-6cce9cd4ffc9" ;
                                                                                            <http://BPMNbasedOntology#name> "Zuständigkeit prüfen" ;
                                                                                            rdfs:label "Zuständigkeit prüfen" .
@@ -572,11 +572,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_3a5bc1b5-61f4-4d4c-af7f-b1728f919b38
 <https://w3id.org/GerPS-onto/ontology#99006028261000_3a5bc1b5-61f4-4d4c-af7f-b1728f919b38> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG7 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG7 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_3a5bc1b5-61f4-4d4c-af7f-b1728f919b38" ;
                                                                                            <http://BPMNbasedOntology#name> "Korrektur anfordern" ;
                                                                                            rdfs:label "Korrektur anfordern" .
@@ -609,11 +609,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_4476807b-2e49-4a15-ad62-9f3fee43b40a
 <https://w3id.org/GerPS-onto/ontology#99006028261000_4476807b-2e49-4a15-ad62-9f3fee43b40a> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <https://www.gesetze-im-internet.de/vwvfg/__25.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG2 ;
+                                                                                           :GPP_0000021 <https://www.gesetze-im-internet.de/vwvfg/__25.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG2 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_4476807b-2e49-4a15-ad62-9f3fee43b40a" ;
                                                                                            <http://BPMNbasedOntology#name> "Auf zuständige Behörde hinweisen" ;
                                                                                            rdfs:label "Auf zuständige Behörde hinweisen" .
@@ -664,11 +664,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_89fe1dcd-0a22-4d4e-8def-7a0b24e87884
 <https://w3id.org/GerPS-onto/ontology#99006028261000_89fe1dcd-0a22-4d4e-8def-7a0b24e87884> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG2 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG2 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_89fe1dcd-0a22-4d4e-8def-7a0b24e87884" ;
                                                                                            <http://BPMNbasedOntology#name> "Anzeige zurückweisen" ;
                                                                                            rdfs:label "Anzeige zurückweisen" .
@@ -677,11 +677,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_8d7df6f8-49b7-4ae0-997c-022d68640330
 <https://w3id.org/GerPS-onto/ontology#99006028261000_8d7df6f8-49b7-4ae0-997c-022d68640330> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__32.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG2 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__32.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG2 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_8d7df6f8-49b7-4ae0-997c-022d68640330" ;
                                                                                            <http://BPMNbasedOntology#name> "Erhebung der Geldbuße veranlassen" ;
                                                                                            rdfs:label "Erhebung der Geldbuße veranlassen" .
@@ -690,13 +690,13 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_8e994dc4-84d6-4089-9eeb-260268e6fb8a
 <https://w3id.org/GerPS-onto/ontology#99006028261000_8e994dc4-84d6-4089-9eeb-260268e6fb8a> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ,
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ,
                                                                                                       <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ,
                                                                                                       <https://www.gesetze-im-internet.de/arbschg/__5.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG7 ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG7 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_8e994dc4-84d6-4089-9eeb-260268e6fb8a" ;
                                                                                            <http://BPMNbasedOntology#name> "Zusätzliche Informationen einholen" ;
                                                                                            rdfs:label "Zusätzliche Informationen einholen" .
@@ -705,11 +705,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_94d87600-bd90-41e3-95c9-9c8e5bea706c
 <https://w3id.org/GerPS-onto/ontology#99006028261000_94d87600-bd90-41e3-95c9-9c8e5bea706c> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__32.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG5 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__32.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG5 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_94d87600-bd90-41e3-95c9-9c8e5bea706c" ;
                                                                                            <http://BPMNbasedOntology#name> "Über Erhebung einer Geldbuße entscheiden" ;
                                                                                            rdfs:label "Über Erhebung einer Geldbuße entscheiden" .
@@ -775,12 +775,12 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_c15dd7d3-7d90-45f5-997d-0fee2128ca36
 <https://w3id.org/GerPS-onto/ontology#99006028261000_c15dd7d3-7d90-45f5-997d-0fee2128ca36> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ,
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ,
                                                                                                       <http://www.gesetze-im-internet.de/muschg_2018/__29.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG4 ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG4 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_c15dd7d3-7d90-45f5-997d-0fee2128ca36" ;
                                                                                            <http://BPMNbasedOntology#name> "Anzeige fachlich prüfen" ;
                                                                                            rdfs:label "Anzeige fachlich prüfen" .
@@ -798,12 +798,12 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_c44a10cf-0b69-481b-b36c-69a0f7641161
 <https://w3id.org/GerPS-onto/ontology#99006028261000_c44a10cf-0b69-481b-b36c-69a0f7641161> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
-                                                                                           :GERPSP008 :BenachrichtigunguberdieBeschaftigungeinerschwangerenoderstillendenFrau ,
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
+                                                                                           :GPP_0000024 :BenachrichtigunguberdieBeschaftigungeinerschwangerenoderstillendenFrau ,
                                                                                                       :S00000094 ;
-                                                                                           :GERPSP009 :RAG1 ;
+                                                                                           :GPP_0000025 :RAG1 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_c44a10cf-0b69-481b-b36c-69a0f7641161" ;
                                                                                            <http://BPMNbasedOntology#name> "Anzeige empfangen" ;
                                                                                            rdfs:label "Anzeige empfangen" .
@@ -836,11 +836,11 @@
 ###  https://w3id.org/GerPS-onto/ontology#99006028261000_f8b43c65-cc8a-4064-ab39-b77e8db5cd4b
 <https://w3id.org/GerPS-onto/ontology#99006028261000_f8b43c65-cc8a-4064-ab39-b77e8db5cd4b> rdf:type owl:NamedIndividual ,
                                                                                                     <http://BPMNbasedOntology#SubProcess> ,
-                                                                                                    :GERPSE011 ;
+                                                                                                    :GPP_0000006 ;
                                                                                            prov:qualifiedAssociation :QA99006028261000_39239818-2743-4f19-9e03-89d271189b85 ;
-                                                                                           :GERPSP001 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
-                                                                                           :GERPSP008 :S00000094 ;
-                                                                                           :GERPSP009 :RAG3 ;
+                                                                                           :GPP_0000021 <http://www.gesetze-im-internet.de/muschg_2018/__27.html> ;
+                                                                                           :GPP_0000024 :S00000094 ;
+                                                                                           :GPP_0000025 :RAG3 ;
                                                                                            <http://BPMNbasedOntology#id> "99006028261000_f8b43c65-cc8a-4064-ab39-b77e8db5cd4b" ;
                                                                                            <http://BPMNbasedOntology#name> "Anzeige formell prüfen" ;
                                                                                            rdfs:label "Anzeige formell prüfen" .
@@ -848,21 +848,21 @@
 
 ###  https://www.gesetze-im-internet.de/arbschg/__5.html
 <https://www.gesetze-im-internet.de/arbschg/__5.html> rdf:type owl:NamedIndividual ,
-                                                               :GERPSE006 ;
+                                                               :GPP_0000003 ;
                                                       <http://BPMNbasedOntology#name> "§ 5 ArbSchG" ;
                                                       rdfs:label "§ 5 ArbSchG" .
 
 
 ###  https://www.gesetze-im-internet.de/vwvfg/__25.html
 <https://www.gesetze-im-internet.de/vwvfg/__25.html> rdf:type owl:NamedIndividual ,
-                                                              :GERPSE006 ;
+                                                              :GPP_0000003 ;
                                                      <http://BPMNbasedOntology#name> "§ 25 VwVfG" ;
                                                      rdfs:label "§ 25 VwVfG" .
 
 
 ###  https://www.gesetze-im-internet.de/vwvfg/__3.html
 <https://www.gesetze-im-internet.de/vwvfg/__3.html> rdf:type owl:NamedIndividual ,
-                                                             :GERPSE006 ;
+                                                             :GPP_0000003 ;
                                                     <http://BPMNbasedOntology#name> "§ 3 VwVfG" ;
                                                     rdfs:label "§ 3 VwVfG" .
 

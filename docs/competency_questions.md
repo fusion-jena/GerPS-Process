@@ -8,11 +8,11 @@ This is the list of sparql queries corresponding to the initially formulated com
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT *
 WHERE {
-  ?Leistung rdf:type gerps:GERPSE008
+  ?Leistung rdf:type gop:GPP_0000004
 }
 
 ```
@@ -25,12 +25,12 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT ?Prozess
 WHERE {
-  FILTER(?Leistung=gerps:99006028261000)
-  ?Leistung gerps:GERPSP005 ?Prozess.
+  FILTER(?Leistung=gop:99006028261000)
+  ?Leistung gop:GPP_0000022 ?Prozess.
 }
 
 
@@ -44,13 +44,13 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT ?Prozessschritt
 WHERE {
-  FILTER(?Leistung=gerps:99006028261000)
-  ?Leistung gerps:GERPSP005 ?Prozess.
-  ?Prozess gerps:GERPSP006 ?Prozessschritt
+  FILTER(?Leistung=gop:99006028261000)
+  ?Leistung gop:GPP_0000022 ?Prozess.
+  ?Prozess gop:GPP_0000023 ?Prozessschritt
 }
 
 
@@ -64,7 +64,7 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT ?erster_Prozessschritt ?letzter_Prozessschritt
 WHERE {
@@ -85,13 +85,13 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 
 SELECT ?ID
 WHERE {
-  FILTER(?Leistung=gerps:99006028261000)
-  ?Leistung gerps:GERPSP016 ?ID
+  FILTER(?Leistung=gop:99006028261000)
+  ?Leistung gop:GPP_0000030 ?ID
 }        
 
 ```
@@ -104,12 +104,12 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 
 SELECT *
 WHERE {
-  ?Prozess gerps:GERPSP011 ?Bearbeitungsfrist
+  ?Prozess gop:GPP_0000027 ?Bearbeitungsfrist
 }
 
 ```
@@ -122,15 +122,15 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 
 SELECT DISTINCT ?Resource
 WHERE {
-  FILTER(?Leistung=gerps:99006028261000)
-  ?Leistung gerps:GERPSP005 ?Prozess.
-  ?Prozess gerps:GERPSP006 ?Prozessschritt.
-  ?Prozessschritt gerps:GERPSP008 ?Resource
+  FILTER(?Leistung=gop:99006028261000)
+  ?Leistung gop:GPP_0000022 ?Prozess.
+  ?Prozess gop:GPP_0000023 ?Prozessschritt.
+  ?Prozessschritt gop:GPP_0000024 ?Resource
 }   
 
 ```
@@ -143,12 +143,12 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 
 SELECT *
 WHERE {
-  ?Dokument gerps:GERPSP010 ?Abgabefrist
+  ?Dokument gop:GPP_0000026 ?Abgabefrist
 }
 
 
@@ -162,11 +162,11 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT *
 WHERE {
-  ?Datenfeld gerps:GERPSP012 ?ID.
+  ?Datenfeld gop:GPP_0000028 ?ID.
 }  
 
 
@@ -182,11 +182,11 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bbo: <http://BPMNbasedOntology#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT DISTINCT ?Agent ?Role
 WHERE {
-  ?Prozess rdf:type gerps:GERPSE010 .
+  ?Prozess rdf:type gop:GPP_0000005 .
   ?Prozess prov:qualifiedAssociation ?Association .
   ?Association prov:agent ?Agent .
   ?Association prov:hadRole ?Role .
@@ -204,12 +204,12 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bbo: <http://BPMNbasedOntology#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT DISTINCT ?Agent ?Role ?Prozessschritt
 WHERE {
-    ?Prozess rdf:type gerps:GERPSE010 .
-    ?Prozess gerps:GERPSP006 ?Prozessschritt .
+    ?Prozess rdf:type gop:GPP_0000005 .
+    ?Prozess gop:GPP_0000023 ?Prozessschritt .
     ?Prozessschritt prov:qualifiedAssociation ?Association .
     ?Association prov:agent ?Agent .
     ?Association prov:hadRole ?Role .
@@ -225,13 +225,13 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT DISTINCT ?Handlungsgrundlage
 WHERE {
-  ?Prozess gerps:GERPSP006 ?Prozessschritt.
+  ?Prozess gop:GPP_0000023 ?Prozessschritt.
   ?Prozess bbo:id "99006028261000".
-  ?Prozessschritt gerps:GERPSP001 ?Handlungsgrundlage .
+  ?Prozessschritt gop:GPP_0000021 ?Handlungsgrundlage .
 }  
 
 ```
@@ -244,11 +244,11 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT *
 WHERE {
-  ?Prozessschritt gerps:GERPSP001 ?Handlungsgrundlage .
+  ?Prozessschritt gop:GPP_0000021 ?Handlungsgrundlage .
 }
 
 ```
@@ -261,13 +261,13 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT DISTINCT ?RAG
 WHERE {
   ?Prozess bbo:id "99006028261000".
-  ?Prozess gerps:GERPSP006 ?Prozessschritt .
-  ?Prozessschritt gerps:GERPSP009 ?RAG
+  ?Prozess gop:GPP_0000023 ?Prozessschritt .
+  ?Prozessschritt gop:GPP_0000025 ?RAG
 }
 
 ```
@@ -280,11 +280,11 @@ WHERE {
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX bbo: <http://BPMNbasedOntology#>
-PREFIX gerps: <https://w3id.org/GerPS-onto/ontology#>
+PREFIX gop: <https://w3id.org/gerps/ontology/process/>
 
 SELECT *
 WHERE {
-  ?Prozessschritt gerps:GERPSP009 ?RAG
+  ?Prozessschritt gop:GPP_0000025 ?RAG
 }       
 
 ```
