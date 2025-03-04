@@ -32,6 +32,7 @@
                                                 vann:preferredNamespaceUri "https://w3id.org/gerps/ontology/process" ;
                                                 owl:priorVersion <https://w3id.org/gerps/ontology/process/4.0/> ;
                                                 owl:versionInfo "4.1" ;
+                                                dct:description "![Diagram](gop_diagram.svg)" ;
                                                 schema:citation "Cite this vocabulary as: openDVA, GerPS-Process 4.1"@en ,
                                                                 "Zitieren Sie dieses Vokabular als: openDVA, GerPS-Process 4.1"@de .
 
