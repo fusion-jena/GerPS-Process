@@ -2,7 +2,7 @@ name: Deploy all ontology versions on pages
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 permissions:
   contents: read

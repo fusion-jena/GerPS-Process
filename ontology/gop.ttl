@@ -92,24 +92,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/gerps/ontology/process#GPP_0000038
-:GPP_0000038 rdf:type owl:ObjectProperty ;
-             rdfs:domain :GPP_0000005 ;
-             rdfs:range :GPP_0000036 ;
-             rdfs:comment "Gibt an, in welchen Verwaltungen ein Prozess Anwendung finden kann (beruhend auf den verwendeten Gesetzesgrundlagen)."@de ,
-                          "Indicates in which administrations a process can be applied (due to the legal basis used)."@en ;
-             rdfs:label "has administrative policy coding"@en ,
-                        "hat verwaltungspolitische Kodierung"@de .
-
-
-###  https://w3id.org/gerps/ontology/process#GPP_0000039
-:GPP_0000039 rdf:type owl:ObjectProperty ;
-             rdfs:label "Links a process with its level of detail, which indicates what type of process it is according to the FIM methodology (e.g. master process, reference process)."@en ,
-                        "Verknüpft einen Prozess mit seiner Detaillierungsstufe, welche angibt um welche Art von Prozess nach der FIM-Methodik es sich handelt (z.B. Stammprozess, Referenzprozesss)."@de ,
-                        "has level of detail"@en ,
-                        "hat Detaillierungsstufe"@de .
-
-
 ###  https://w3id.org/gerps/ontology/process/GPP_0000018
 :GPP_0000018 rdf:type owl:ObjectProperty ;
              rdfs:domain :GPP_0000014 ;
@@ -228,6 +210,26 @@ xsd:date rdf:type rdfs:Datatype .
                           "Verknüpft eine Aufgabensammlung mit ihren spezifischen Aufgaben."@de ;
              rdfs:label "has process task"@en ,
                         "hat Prozessaufgabe"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000038
+:GPP_0000038 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000005 ;
+             rdfs:range :GPP_0000036 ;
+             rdfs:comment "Gibt an, in welchen Verwaltungen ein Prozess Anwendung finden kann (beruhend auf den verwendeten Gesetzesgrundlagen)."@de ,
+                          "Indicates in which administrations a process can be applied (due to the legal basis used)."@en ;
+             rdfs:label "has administrative policy coding"@en ,
+                        "hat verwaltungspolitische Kodierung"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000039
+:GPP_0000039 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000005 ;
+             rdfs:range :GPP_0000035 ;
+             rdfs:comment "Links a process with its level of detail, which indicates what type of process it is according to the FIM methodology (e.g. master process, reference process)."@en ,
+                          "Verknüpft einen Prozess mit seiner Detaillierungsstufe, welche angibt um welche Art von Prozess nach der FIM-Methodik es sich handelt (z.B. Stammprozess, Referenzprozesss)."@de ;
+             rdfs:label "has level of detail"@en ,
+                        "hat Detaillierungsstufe"@de .
 
 
 ###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_process
