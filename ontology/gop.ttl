@@ -14,7 +14,6 @@
 @base <https://w3id.org/gerps/ontology/process/> .
 
 <https://w3id.org/gerps/ontology/process> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/gerps/ontology/process/4.2/> ;
                                            owl:imports <http://www.w3.org/ns/prov-o-20130430> ;
                                            dct:abstract "Ontologie für den Transfer von FIM(Föderales Informationsmanagement)-Informationen, insbesondere von Formularen, und den darin gespeicherten Daten, die von der öffentlichen Verwaltung verwendet wird um Dienste anzubieten. Zu diesem Zweck bildet die Ontologie den XDatenfeld-Standard ab."@de ,
                                                         "Ontology used for transferring FIM(Federal Information Management)-information, specifically the processes involved in offering public services. To achieve this, it maps the XProzess-standard."@en ;
@@ -24,17 +23,9 @@
                                                            "Maximilian Enderling" ,
                                                            "Maximilian Raupach" ;
                                            dct:creator "openDVA" ;
-                                           dct:description "![Diagram](gop_diagram.svg)" ;
                                            dct:license <http://creativecommons.org/licenses/by/4.0/> ;
-                                           dct:modified "2025-03-19"^^xsd:date ;
                                            dct:title "GerPS-Process"@en ,
-                                                     "GerPS-Prozess"@de ;
-                                           vann:preferredNamespacePrefix "gop"@en ;
-                                           vann:preferredNamespaceUri "https://w3id.org/gerps/ontology/process" ;
-                                           owl:priorVersion <https://w3id.org/gerps/ontology/process/4.1/> ;
-                                           owl:versionInfo "4.2" ;
-                                           schema:citation "Cite this vocabulary as: openDVA, GerPS-Process 4.2"@en ,
-                                                           "Zitieren Sie dieses Vokabular als: openDVA, GerPS-Process 4.2"@de .
+                                                     "GerPS-Prozess"@de .
 
 #################################################################
 #    Annotation properties
