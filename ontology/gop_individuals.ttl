@@ -679,7 +679,7 @@
                 "Erwerbsfähig?" .
 
 <https://w3id.org/gerps/ontology/process/_f05dd65b-758d-44ec-a74d-e9f4aefe961c>
-        a       <http://BPMNbasedOntology#BoundaryEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#BoundaryEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Bestimmte Frist für Rückmeldung abgelaufen" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -806,7 +806,7 @@
                 "_2f8c1e6c-e0e6-400f-a7d5-649c5ffe51ae" .
 
 <https://w3id.org/gerps/ontology/process/_f76f206e-5e96-4471-b90b-26445f920b1c>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag an zuständigen Leistungsträger weitergeleitet" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -1314,7 +1314,7 @@
                 "_c3347314-d2ba-4c89-9312-0d680ebd01b9" .
 
 <https://w3id.org/gerps/ontology/process/_c4d477cd-789b-4863-b443-2acab4282ce8>
-        a       <http://BPMNbasedOntology#IntermediateCatchEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "bei Rechtsbehelfsbelehrung: 1 Monat vergangen/ ohne Rechtsbehelfsbelehrung: 1 Jahr vergangen" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -1341,7 +1341,7 @@
                 "_dc1c2e96-84c6-4444-ae82-ceed3fd7b0a1" .
 
 <https://w3id.org/gerps/ontology/process/_c13bad0a-3161-4e74-96d0-ef8caf3cd21a>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag abgelehnt/ Antrag mit Nebenbestimmungen bzw. Doppelwirkung genehmigt (Rechtsmittel eingereicht)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -1728,7 +1728,7 @@
                 "nein" .
 
 <https://w3id.org/gerps/ontology/process/_75fc4e0b-71b9-4183-81e8-2b634154a5b9>
-        a       <http://BPMNbasedOntology#IntermediateCatchEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Widerspruch erhalten" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -1765,7 +1765,7 @@
                 "nein" .
 
 <https://w3id.org/gerps/ontology/process/_d7cd68c4-b29c-4157-842c-1276435cf3b7>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag genehmigt (bestandskräftig)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -1819,7 +1819,7 @@
                 "_ee4ceb3c-2c2d-4a6f-92d3-05f00658e060" .
 
 <https://w3id.org/gerps/ontology/process/_3317bc2f-2dd6-4f8d-9c16-c8ef789e2cff>
-        a       <http://BPMNbasedOntology#StartEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#StartEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Unterlagen erhalten" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -2118,7 +2118,7 @@
                 "_c036e9aa-83f4-4aa9-be20-a862a4256597" .
 
 <https://w3id.org/gerps/ontology/process/_9f83c368-fccc-47d4-a5da-bf7ada5d6e11>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag abgelehnt/ Antrag mit Nebenbestimmungen bzw. Doppelwirkung genehmigt (bestandskräftig)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -3917,7 +3917,7 @@
                 "Flow_1ps8mhe" .
 
 <https://w3id.org/gerps/ontology/process/Event_0ots1fy>
-        a       <http://BPMNbasedOntology#IntermediateCatchEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Mitteilung über eingereichte Klage erhalten" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -4394,7 +4394,7 @@
                 "Flow_139k9m6" .
 
 <https://w3id.org/gerps/ontology/process/Event_00uylyw>
-        a       <http://BPMNbasedOntology#IntermediateCatchEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Bei Rechtsbehelfsbelehrung: 1 Monat vergangen / ohne Rechtsbehelfsbelehrung: 1 Jahr vergangen" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -5248,7 +5248,7 @@
                 "Flow_1gxk1ka" .
 
 <https://w3id.org/gerps/ontology/process/Event_0f2ss4a>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag abgelehnt / Antrag mit Nebenbestimmung bzw. Doppelwirkung genehmigt (Rechtsmittel eingereicht)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -5400,7 +5400,7 @@
                 "Flow_1px6soh" .
 
 <https://w3id.org/gerps/ontology/process/Event_0c1f1f0>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag abgelehnt / Antrag mit Nebenbestimmung bzw. Doppelwirkung genehmigt (bestandskräftig)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -5996,7 +5996,7 @@
                 "Flow_0diuz3x" .
 
 <https://w3id.org/gerps/ontology/process/Event_1h4bzax>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag abgelehnt" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -6624,7 +6624,7 @@
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
 <https://w3id.org/gerps/ontology/process/Event_1tvq5h5>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag an zuständigen Leistungsträger weitergeleitet" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -6925,7 +6925,7 @@
                 "Flow_04x8ukb" .
 
 <https://w3id.org/gerps/ontology/process/Event_0q4h96o>
-        a       <http://BPMNbasedOntology#IntermediateCatchEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#IntermediateCatchEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Widerspruch erhalten" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -7127,7 +7127,7 @@
                 "Flow_05jnhyx" .
 
 <https://w3id.org/gerps/ontology/process/Event_05s3jhq>
-        a       <http://BPMNbasedOntology#StartEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#StartEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "«Start» " ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
@@ -7999,7 +7999,7 @@
                 "Flow_0b32pxv" .
 
 <https://w3id.org/gerps/ontology/process/Event_14jgqo0>
-        a       <http://BPMNbasedOntology#EndEvent> ;
+        a       <https://www.irit.fr/recherches/MELODI/ontologies/BBO#EndEvent> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "«Ende» Antrag genehmingt (bestandskräftig)" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>

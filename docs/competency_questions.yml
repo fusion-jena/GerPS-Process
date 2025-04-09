@@ -4,113 +4,107 @@ competency-questions:
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT *
       WHERE {
-        ?Leistung rdf:type gop:GPP_0000004
+        ?Leistung rdf:type gpp:GPP_0000004
       }
   -
     plain: "Which *processes* are necessary to perform a *service*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT ?Prozess
       WHERE {
-        FILTER(?Leistung=gop:99006028261000)
-        ?Leistung gop:GPP_0000022 ?Prozess.
+        FILTER(?Leistung=gpp:99107108017000)
+        ?Leistung gpp:GPP_0000022 ?Prozess.
       }
   -
     plain: "Which *process steps* are necessary to perform a *service*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT ?Prozessschritt
       WHERE {
-        FILTER(?Leistung=gop:99006028261000)
-        ?Leistung gop:GPP_0000022 ?Prozess.
-        ?Prozess gop:GPP_0000023 ?Prozessschritt
+        gpp:99107108017000 gpp:GPP_0000022 / gpp:GPP_0000023 ?Prozessschritt .
       }
   -
     plain: "What is the first/last *process step* of a *process*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT ?erster_Prozessschritt ?letzter_Prozessschritt
       WHERE {
-        ?StartEvent rdf:type bbo:StartEvent.
-        ?EndEvent rdf:type bbo:EndEvent.
-        ?StartEvent bbo:has_nextFlowNode ?erster_Prozessschritt.
-        ?EndEvent bbo:has_previousFlowNode ?letzter_Prozessschritt
+        ?StartEvent rdf:type bbo:StartEvent ;
+          rdfs:label ?erster_Prozessschritt .
+        ?EndEvent rdf:type bbo:EndEvent ;
+          rdfs:label ?letzter_Prozessschritt .
       }  
   -
     plain: "Which *LeikaID* has a *service*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
 
       SELECT ?ID
       WHERE {
-        FILTER(?Leistung=gop:99006028261000)
-        ?Leistung gop:GPP_0000030 ?ID
+        gpp:99107108017000 gpp:GPP_0000030 ?ID .
       }
   -
     plain: "What is the *processing deadline* for a *process*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
-
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT *
       WHERE {
-        ?Prozess gop:GPP_0000027 ?Bearbeitungsfrist
+        ?Prozess gpp:GPP_0000027 ?Bearbeitungsfrist
       }
   -
     plain: "Which *resources/data fields/documents* are required to perform a *service*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
 
       SELECT DISTINCT ?Resource
       WHERE {
-        FILTER(?Leistung=gop:99006028261000)
-        ?Leistung gop:GPP_0000022 ?Prozess.
-        ?Prozess gop:GPP_0000023 ?Prozessschritt.
-        ?Prozessschritt gop:GPP_0000024 ?Resource
+        gpp:99107108017000 gpp:GPP_0000022 / gpp:GPP_0000023  / gpp:GPP_0000024 ?Resource
       }
   -
     plain: "What is the *submission deadline* of a *document*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
       
       
       SELECT *
       WHERE {
-        ?Dokument gop:GPP_0000026 ?Abgabefrist
+        ?Dokument gpp:GPP_0000026 ?Abgabefrist
       }
   -
     plain: "Which *data field ID* does a *data field* have?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT *
       WHERE {
-        ?Datenfeld gop:GPP_0000028 ?ID.
+        ?Datenfeld gpp:GPP_0000028 ?ID.
       }
   -
     plain: "Which *actor(s)/main actor(s)/result receiver(s)/contributor(s)* execute(s) which *processes*?"
@@ -119,14 +113,15 @@ competency-questions:
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
       PREFIX prov: <http://www.w3.org/ns/prov#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT DISTINCT ?Agent ?Role
       WHERE {
-        ?Prozess rdf:type gop:GPP_0000005 .
-        ?Prozess prov:qualifiedAssociation ?Association .
-        ?Association prov:agent ?Agent .
-        ?Association prov:hadRole ?Role .
+        ?Prozess a gpp:GPP_0000005 ;
+                 prov:qualifiedAssociation [
+           prov:agent ?Agent ;
+           prov:hadRole ?Role 
+        ] .
       }  
   -
     plain: "Which *actor(s)/main actor(s) /result receiver(s) /contributor(s)* participate(s) in which *steps* of the *process*?"
@@ -135,61 +130,60 @@ competency-questions:
       PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
       PREFIX prov: <http://www.w3.org/ns/prov#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT DISTINCT ?Agent ?Role ?Prozessschritt
       WHERE {
-          ?Prozess rdf:type gop:GPP_0000005 .
-          ?Prozess gop:GPP_0000023 ?Prozessschritt .
-          ?Prozessschritt prov:qualifiedAssociation ?Association .
-          ?Association prov:agent ?Agent .
-          ?Association prov:hadRole ?Role .
+          ?Prozess a gpp:GPP_0000005 ;
+                   gpp:GPP_0000023 ?Prozessschritt .
+          ?Prozessschritt prov:qualifiedAssociation [
+            prov:agent ?Agent ;
+            prov:hadRole ?Role
+          ] .
       }
   -
     plain: "On which *legal basis* is a *process* based?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT DISTINCT ?Handlungsgrundlage
       WHERE {
-        ?Prozess gop:GPP_0000023 ?Prozessschritt.
-        ?Prozess bbo:id "99006028261000".
-        ?Prozessschritt gop:GPP_0000021 ?Handlungsgrundlage .
+        ?Prozess bbo:id "lU9Xlw9sGT-uuladHwBaNlJjNSUn3k59QTCYOe2NutA" ;
+          gpp:GPP_0000023 / gpp:GPP_0000021 ?Handlungsgrundlage .
       }
   -
     plain: "On what *legal basis* is which *process step* based?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT *
       WHERE {
-        ?Prozessschritt gop:GPP_0000021 ?Handlungsgrundlage .
+        ?Prozessschritt gpp:GPP_0000021 ?Handlungsgrundlage .
       }
   -
     plain: "What *reference activity groups* does a *process* include?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT DISTINCT ?RAG
       WHERE {
-        ?Prozess bbo:id "99006028261000".
-        ?Prozess gop:GPP_0000023 ?Prozessschritt .
-        ?Prozessschritt gop:GPP_0000025 ?RAG
+        ?Prozess bbo:id "lU9Xlw9sGT-uuladHwBaNlJjNSUn3k59QTCYOe2NutA" ;
+                 gpp:GPP_0000023 / gpp:GPP_0000025 ?RAG .
       }
   -
     plain: "Which *reference activity group* corresponds to which *process step*?"
     query: |-
       PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       PREFIX bbo: <https://www.irit.fr/recherches/MELODI/ontologies/BBO#>
-      PREFIX gop: <https://w3id.org/gerps/ontology/process/>
+      PREFIX gpp: <https://w3id.org/gerps/ontology/process/>
 
       SELECT *
       WHERE {
-        ?Prozessschritt gop:GPP_0000025 ?RAG
+        ?Prozessschritt gpp:GPP_0000025 ?RAG
       }   
