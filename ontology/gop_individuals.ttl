@@ -298,7 +298,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "3" .
 
-<https://w3id.org/gerps/ontology/process/null_faece1db-fe5f-4601-83bb-434a5dd19f26>
+<https://w3id.org/gerps/ontology/process/99107108017000_faece1db-fe5f-4601-83bb-434a5dd19f26>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -707,7 +707,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Sprache der Unterlagen prüfen" .
 
-<https://w3id.org/gerps/ontology/process/null_3d9c3643-65b9-4dfb-9065-6be8aca487f1>
+<https://w3id.org/gerps/ontology/process/99107108017000_3d9c3643-65b9-4dfb-9065-6be8aca487f1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -876,11 +876,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Ausnahme notwendig und möglich?" .
 
-<https://w3id.org/gerps/ontology/process/null_6c755d5e-85bb-4f42-af38-d81a1b69f0a1>
+<https://w3id.org/gerps/ontology/process/99107108017000_6c755d5e-85bb-4f42-af38-d81a1b69f0a1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_e6a8d5bf-3be0-47ec-93a4-ba1a5c4fd9b7> .
 
-<https://w3id.org/gerps/ontology/process/null_6a723bfb-f872-4d46-9a20-06b6360654e9>
+<https://w3id.org/gerps/ontology/process/99107108017000_6a723bfb-f872-4d46-9a20-06b6360654e9>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1041,11 +1041,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Vorrang anderer Sozialleistungen prüfen" .
 
-<https://w3id.org/gerps/ontology/process/null_4fb327df-d696-4fb0-88ce-c611d28d921a>
+<https://w3id.org/gerps/ontology/process/99107108017000_4fb327df-d696-4fb0-88ce-c611d28d921a>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_5f6af3c4-7864-4c83-9864-2d32f73eac4e>
+<https://w3id.org/gerps/ontology/process/99107108017000_5f6af3c4-7864-4c83-9864-2d32f73eac4e>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1073,7 +1073,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Unterlagen entgegennehmen" .
 
-<https://w3id.org/gerps/ontology/process/null_0e5cbdb3-4ea8-4762-a7b3-357619f113c5>
+<https://w3id.org/gerps/ontology/process/99107108017000_0e5cbdb3-4ea8-4762-a7b3-357619f113c5>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1189,7 +1189,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Nebenbestimmungen erteilt? Bleibt die Begünstigung hinter den Ansprüchen des Antragstellers zurück (Doppelwirkung)?" .
 
-<https://w3id.org/gerps/ontology/process/null_21aae352-b050-40fb-a407-fb384a9f5dd7>
+<https://w3id.org/gerps/ontology/process/99107108017000_21aae352-b050-40fb-a407-fb384a9f5dd7>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1220,7 +1220,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Zuständig?" .
 
-<https://w3id.org/gerps/ontology/process/null_fe54a97e-ccad-4170-bfcf-9252170e8a22>
+<https://w3id.org/gerps/ontology/process/99107108017000_fe54a97e-ccad-4170-bfcf-9252170e8a22>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1251,7 +1251,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Ablehnungsbescheid erlassen" .
 
-<https://w3id.org/gerps/ontology/process/null_d13865f7-3956-45f6-929d-28d615c77282>
+<https://w3id.org/gerps/ontology/process/99107108017000_d13865f7-3956-45f6-929d-28d615c77282>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_a1648027-9c45-4218-91f3-79fa9c04d59f> .
 
@@ -1262,7 +1262,7 @@
         <http://www.w3.org/ns/prov#hadRole>
                 <https://w3id.org/gerps/ontology/process/GERPSE009> .
 
-<https://w3id.org/gerps/ontology/process/null_cde9de32-a2eb-4fb4-81ff-63a6ca11dd43>
+<https://w3id.org/gerps/ontology/process/99107108017000_cde9de32-a2eb-4fb4-81ff-63a6ca11dd43>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1275,7 +1275,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_c67eea52-33da-41c3-8811-05563f9a6801" .
 
-<https://w3id.org/gerps/ontology/process/null_bf4221e1-81a9-4ac0-b68a-82c77aa3b3db>
+<https://w3id.org/gerps/ontology/process/99107108017000_bf4221e1-81a9-4ac0-b68a-82c77aa3b3db>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_a7b75515-e764-4905-a132-84b7e1ff4d37> .
 
@@ -1388,7 +1388,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Ablehnungsbescheid bekannt geben" .
 
-<https://w3id.org/gerps/ontology/process/null_7dcf9094-c8b7-4d7f-bd45-af21511b8c5d>
+<https://w3id.org/gerps/ontology/process/99107108017000_7dcf9094-c8b7-4d7f-bd45-af21511b8c5d>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1429,7 +1429,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/null_3dbfe661-953d-4dbe-9b28-a998912e41da>
+<https://w3id.org/gerps/ontology/process/99107108017000_3dbfe661-953d-4dbe-9b28-a998912e41da>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1627,11 +1627,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_c2d2fa40-3c99-44a1-82fe-cb39542c2709" .
 
-<https://w3id.org/gerps/ontology/process/null_335d2a22-6f34-4a8d-81f5-a516972d43a6>
+<https://w3id.org/gerps/ontology/process/99107108017000_335d2a22-6f34-4a8d-81f5-a516972d43a6>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_019eb38a-cad9-4e2b-9a8c-442ec454aac2>
+<https://w3id.org/gerps/ontology/process/99107108017000_019eb38a-cad9-4e2b-9a8c-442ec454aac2>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1827,7 +1827,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Unterlagen erhalten" .
 
-<https://w3id.org/gerps/ontology/process/null_8ca205e2-1829-4864-933e-972b90da00f4>
+<https://w3id.org/gerps/ontology/process/99107108017000_8ca205e2-1829-4864-933e-972b90da00f4>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1849,14 +1849,14 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_9b089d6a-84ac-4954-a1c4-8951f60308c2" .
 
-<https://w3id.org/gerps/ontology/process/null_e2ae6409-6148-4cc9-a3a1-3c168524633c>
+<https://w3id.org/gerps/ontology/process/99107108017000_e2ae6409-6148-4cc9-a3a1-3c168524633c>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
 <https://w3id.org/gerps/ontology/process/9910710801700011999>
         a       <https://w3id.org/gerps/ontology/process/GPP_0000017> .
 
-<https://w3id.org/gerps/ontology/process/null_88b76f22-db18-4e03-a2aa-af5595d9428e>
+<https://w3id.org/gerps/ontology/process/99107108017000_88b76f22-db18-4e03-a2aa-af5595d9428e>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1920,7 +1920,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_acf30f5e-2abb-45d4-9d71-4f101146881c" .
 
-<https://w3id.org/gerps/ontology/process/null_0ebcd77c-9260-48a7-90df-399dd5fceaa4>
+<https://w3id.org/gerps/ontology/process/99107108017000_0ebcd77c-9260-48a7-90df-399dd5fceaa4>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -1992,7 +1992,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Vollständigkeit prüfen" .
 
-<https://w3id.org/gerps/ontology/process/null_2ef610d9-1ba2-482b-9543-d9ed2922dd7a>
+<https://w3id.org/gerps/ontology/process/99107108017000_2ef610d9-1ba2-482b-9543-d9ed2922dd7a>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2033,7 +2033,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Rahmenbedingungen der Leistungsberechtigung prüfen" .
 
-<https://w3id.org/gerps/ontology/process/null_de5ca46d-86e7-4a90-a23e-94b7533c9fa0>
+<https://w3id.org/gerps/ontology/process/99107108017000_de5ca46d-86e7-4a90-a23e-94b7533c9fa0>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2077,7 +2077,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/null_5896169d-005b-4555-935c-63eb25a62518>
+<https://w3id.org/gerps/ontology/process/99107108017000_5896169d-005b-4555-935c-63eb25a62518>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2163,7 +2163,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Unterlagen entgegennehmen" .
 
-<https://w3id.org/gerps/ontology/process/null_eb406949-0653-4ac4-858f-faf90ed6bef5>
+<https://w3id.org/gerps/ontology/process/99107108017000_eb406949-0653-4ac4-858f-faf90ed6bef5>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2231,7 +2231,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_965adf10-874c-402b-8b38-c3f160c6dc6c" .
 
-<https://w3id.org/gerps/ontology/process/null_f733e4fe-a810-45a6-b41d-461e13459ef6>
+<https://w3id.org/gerps/ontology/process/99107108017000_f733e4fe-a810-45a6-b41d-461e13459ef6>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2272,7 +2272,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Bewilligungszeitraum festlegen" .
 
-<https://w3id.org/gerps/ontology/process/null_ec02abe0-fc40-4c81-9ebc-63dd8209365d>
+<https://w3id.org/gerps/ontology/process/99107108017000_ec02abe0-fc40-4c81-9ebc-63dd8209365d>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2387,7 +2387,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_8e74de00-2521-4e46-95d9-ae896cb733c7" .
 
-<https://w3id.org/gerps/ontology/process/null_fa0d9eba-569c-4247-890a-2bad1e4da70e>
+<https://w3id.org/gerps/ontology/process/99107108017000_fa0d9eba-569c-4247-890a-2bad1e4da70e>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2422,7 +2422,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_aae3d698-2ed8-4d89-a975-fd79857fc3b7" .
 
-<https://w3id.org/gerps/ontology/process/null_5fc37cab-1539-47dd-b780-ea104659a881>
+<https://w3id.org/gerps/ontology/process/99107108017000_5fc37cab-1539-47dd-b780-ea104659a881>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2605,11 +2605,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Widerspruch entgegennehmen" .
 
-<https://w3id.org/gerps/ontology/process/null_ba79130a-06c5-4d70-8084-0dcf37d20610>
+<https://w3id.org/gerps/ontology/process/99107108017000_ba79130a-06c5-4d70-8084-0dcf37d20610>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_0b8c5d0f-7d7c-4d23-b264-41ef667b80fd>
+<https://w3id.org/gerps/ontology/process/99107108017000_0b8c5d0f-7d7c-4d23-b264-41ef667b80fd>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2626,7 +2626,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/null_dd7d138f-c937-499a-8e32-d5221470e888>
+<https://w3id.org/gerps/ontology/process/99107108017000_dd7d138f-c937-499a-8e32-d5221470e888>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2665,7 +2665,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/null_f231fea4-0a59-45b1-864b-693a4693e8f6>
+<https://w3id.org/gerps/ontology/process/99107108017000_f231fea4-0a59-45b1-864b-693a4693e8f6>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_15d32474-e0cc-444c-a29a-9d45c011b7b1> .
 
@@ -2682,7 +2682,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/null_2e20ff80-4d5a-46d3-8edd-09310cf482a2>
+<https://w3id.org/gerps/ontology/process/99107108017000_2e20ff80-4d5a-46d3-8edd-09310cf482a2>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2695,11 +2695,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_1b8d089f-8990-4cb0-8a78-48006c496323" .
 
-<https://w3id.org/gerps/ontology/process/null_b26dd09b-3a25-4a70-85a1-264fad20b428>
+<https://w3id.org/gerps/ontology/process/99107108017000_b26dd09b-3a25-4a70-85a1-264fad20b428>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_5d6d00e3-9dac-4bc9-a352-bfe4fa8b7585>
+<https://w3id.org/gerps/ontology/process/99107108017000_5d6d00e3-9dac-4bc9-a352-bfe4fa8b7585>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2725,7 +2725,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_fd11d3f2-61bf-4063-a6db-5f40f54aadad" .
 
-<https://w3id.org/gerps/ontology/process/null_e2fac38d-1c01-487f-ab7f-82c6e297b16f>
+<https://w3id.org/gerps/ontology/process/99107108017000_e2fac38d-1c01-487f-ab7f-82c6e297b16f>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2756,7 +2756,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "_4c1f0160-5b28-4556-a3bd-b74b5fd3c560" .
 
-<https://w3id.org/gerps/ontology/process/null_7810fd21-e4a4-4a86-92a0-266f9485ca82>
+<https://w3id.org/gerps/ontology/process/99107108017000_7810fd21-e4a4-4a86-92a0-266f9485ca82>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2813,11 +2813,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/null_8098ea84-7d28-4451-8a06-741150027783>
+<https://w3id.org/gerps/ontology/process/99107108017000_8098ea84-7d28-4451-8a06-741150027783>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_fd0e714f-b3d0-4928-934b-ae34f9fd523f>
+<https://w3id.org/gerps/ontology/process/99107108017000_fd0e714f-b3d0-4928-934b-ae34f9fd523f>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2885,11 +2885,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Zuständiger Leistungsträger" .
 
-<https://w3id.org/gerps/ontology/process/null_bd93feba-0188-4b5c-a3c9-5cb866272ed7>
+<https://w3id.org/gerps/ontology/process/99107108017000_bd93feba-0188-4b5c-a3c9-5cb866272ed7>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
-<https://w3id.org/gerps/ontology/process/null_45ea9072-f091-4b8f-896c-3f564951fa04>
+<https://w3id.org/gerps/ontology/process/99107108017000_45ea9072-f091-4b8f-896c-3f564951fa04>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000_06b18106-3eeb-4799-bbb4-64e4b5bb7f99> .
 
@@ -2952,7 +2952,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_1gc1khc" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1svgpdc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1svgpdc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_1kndmdf> .
 
@@ -3078,7 +3078,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Antrag Bürgergeld (bearbeiten) V0.5" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1yt18xb>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1yt18xb>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3174,7 +3174,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Zuordnen/Zuweisen» Fall in Fachverfahren anlegen, Antrag in eAkte verschlagworten und zuständiger*m Sachbearbeiter*in zuweisen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1hkat43>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1hkat43>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3268,7 +3268,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "5" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0dk00nf>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0dk00nf>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3324,7 +3324,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Zuständig?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_02yrkuh>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_02yrkuh>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3367,7 +3367,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Liegt das Vermögen / EInkommen über dem Freibetrag?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0txe5cz>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0txe5cz>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3434,11 +3434,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Erstellung eines neuen Bescheids notwendig?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_182g1a1>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_182g1a1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_00yoqo0>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_00yoqo0>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3652,7 +3652,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Fordern/Verlangen» Fehlende Informationen/ Unterlagen verlangen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ar0l5j>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ar0l5j>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3678,15 +3678,15 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "25" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1wbj0vn>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1wbj0vn>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_1kndmdf> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_01qwhrb>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_01qwhrb>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0w13dsi>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0w13dsi>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3765,7 +3765,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Beraten/Erläutern» Erstgespräch durchführen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_14dyulx>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_14dyulx>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3795,7 +3795,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Prüfen, formell» Antrag auf Vollständigkeit prüfen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1h89v5o>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1h89v5o>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -3876,7 +3876,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Ausnahme möglich und notwendig?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0ozvq83>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0ozvq83>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4012,7 +4012,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_0clwhbh" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1c2qyd9>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1c2qyd9>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4034,7 +4034,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Entgegennehmen/Annehmen» " .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0px8ex0>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0px8ex0>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4079,11 +4079,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_1ogzl6s" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1tllx7b>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1tllx7b>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_09zgqj8>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_09zgqj8>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4172,7 +4172,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_0aydjut" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1uhtpv9>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1uhtpv9>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4303,7 +4303,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Entscheiden/Beurteilen» Regelbedarf prüfen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1rc1mgk>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1rc1mgk>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4333,7 +4333,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "5" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_148aksa>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_148aksa>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4363,7 +4363,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "12" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0c9a194>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0c9a194>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4427,7 +4427,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "22" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1dpvb6s>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1dpvb6s>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4480,7 +4480,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Erfassen/Aufnehmen» Mehrbedarfe in Fachverfahren anlegen\n" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1m0orkk>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1m0orkk>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4585,7 +4585,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "1" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_00wh2js>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_00wh2js>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4598,7 +4598,7 @@
         <https://w3id.org/gerps/ontology/process/GPP_0000025>
                 <https://w3id.org/gerps/ontology/process/RAGtasktyp_99107108017000Activity_0l3ggqr> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_041yh6z>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_041yh6z>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4634,11 +4634,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1k41tie>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1k41tie>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0ts1wef>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0ts1wef>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4651,15 +4651,15 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Oder» Nebenbestimmungen erteilt? Bleibt die Begünstigung hinter den Ansprüchen des Antrasstellers zurück (Doppelwirkung)?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_102todt>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_102todt>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1lpo9zk>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1lpo9zk>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_1kndmdf> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0l3ggqr>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0l3ggqr>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4689,7 +4689,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Anhörung erforderlich?" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1fv46yc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1fv46yc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4793,7 +4793,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "20" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_04q0egn>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_04q0egn>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -4854,7 +4854,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_16e0a7b" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_11m3slu>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_11m3slu>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5006,7 +5006,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "15" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1o8iz65>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1o8iz65>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5125,7 +5125,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_0f67a07" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_19ocow4>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_19ocow4>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_1kndmdf> .
 
@@ -5142,11 +5142,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1xfm8yt>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1xfm8yt>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0kvlo4u>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0kvlo4u>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5306,7 +5306,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Erstellen/Anlegen» Aufforderung auf Inanspruchnahme der vorrangängigen Sozialleistungen erstellen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ds8e3t>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ds8e3t>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5364,7 +5364,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_12zrblx" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_119g112>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_119g112>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5386,7 +5386,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Freigeben/Unterzeichnen» Bescheid freigeben\n" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_047culc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_047culc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_11wj7yu> .
 
@@ -5580,7 +5580,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "1" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1bs7utb>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1bs7utb>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5593,7 +5593,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_1e7iz00" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1uupj1t>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1uupj1t>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5742,7 +5742,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_17j8wpg" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1daitcx>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1daitcx>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5789,7 +5789,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Sichten/Kenntnisnehmen» Antrag sichten" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1vjolbb>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1vjolbb>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5819,7 +5819,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Übermitteln/Bekanntgeben» Ablehnungsbescheid an antragsstellende Person übermitteln\n" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0ip3z12>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0ip3z12>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5901,7 +5901,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_130dtpo" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0rp2rey>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0rp2rey>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5931,15 +5931,15 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "19" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ugpc3n>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ugpc3n>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_06mvrb3>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_06mvrb3>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0b2wlnh>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0b2wlnh>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -5965,7 +5965,7 @@
         <https://w3id.org/gerps/ontology/process/GPP_0000025>
                 <https://w3id.org/gerps/ontology/process/RAGtasktyp_99107108017000Activity_1rmksk2> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0sf79fo>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0sf79fo>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6058,7 +6058,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "5" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1rmksk2>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1rmksk2>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6602,7 +6602,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0d5uqq3>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0d5uqq3>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6615,11 +6615,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_0y2668v" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1r822l1>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1r822l1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_19pon6q>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_19pon6q>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6632,7 +6632,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "Antrag an zuständigen Leistungsträger weitergeleitet" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_001tv0r>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_001tv0r>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6663,7 +6663,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Entscheiden/Beurteilen» Leistungsberechtigung anhand der Aktenlage prüfen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0ppw2sc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0ppw2sc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6685,7 +6685,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Ablegen/Abschließen» Bescheid ablegen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0g470l8>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0g470l8>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6785,7 +6785,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_18aiziw" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0hks5nh>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0hks5nh>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6824,11 +6824,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "16" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0ek56iz>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0ek56iz>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ixty7w>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ixty7w>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6973,7 +6973,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0fstz98>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0fstz98>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -6990,7 +6990,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1b0zu77>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1b0zu77>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7029,7 +7029,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "17" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0aibivv>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0aibivv>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7100,11 +7100,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "20" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1iz6zui>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1iz6zui>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1e6d5za>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1e6d5za>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7135,11 +7135,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Start» " .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1vnzsbm>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1vnzsbm>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_03w9l6v>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_03w9l6v>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7205,7 +7205,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_00p08og>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_00p08og>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7232,11 +7232,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "20" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1h8yeqc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1h8yeqc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0i86hcc>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0i86hcc>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7305,7 +7305,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Realakt» Änderungen anpassen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0xnq3td>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0xnq3td>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7327,7 +7327,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Gateway_1j7gwdf" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_03h5yn3>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_03h5yn3>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7367,7 +7367,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Übermitteln/Bekanntgeben» an Kunden" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0xrryyb>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0xrryyb>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7405,7 +7405,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "8" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_14zwt21>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_14zwt21>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7431,7 +7431,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1fvtk46>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1fvtk46>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7465,7 +7465,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Berechnen/Kalkulieren» Höhe der Leistung ermitteln\n" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0j0oiwe>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0j0oiwe>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7478,19 +7478,19 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_1e13yp8" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0xb11u1>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0xb11u1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_15rx7pt>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_15rx7pt>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1en1t1f>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1en1t1f>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_08wno68>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_08wno68>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7503,15 +7503,15 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_0v39h11" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0iplj0x>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0iplj0x>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_146dmzq> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0gx3i5m>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0gx3i5m>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_121o601>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_121o601>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_1kndmdf> .
 
@@ -7677,7 +7677,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "1" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1is8nwt>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1is8nwt>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7733,7 +7733,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "18" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1uwaigw>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1uwaigw>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7755,7 +7755,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Erstellen/Anlegen» Widerspruchbescheid erstellen" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_14rejtt>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_14rejtt>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7817,7 +7817,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_1o3g4gq" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ivyhgu>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ivyhgu>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7830,7 +7830,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_1n9cjej" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_14j7b28>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_14j7b28>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7951,7 +7951,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "20" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0bp6zx9>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0bp6zx9>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7968,11 +7968,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1oriwz8>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1oriwz8>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_07p3rr1>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_07p3rr1>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -7985,7 +7985,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_00fvb58" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1ulwra6>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1ulwra6>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8007,11 +8007,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "«Ende» Antrag genehmingt (bestandskräftig)" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_04c5vzs>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_04c5vzs>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_10lns5o>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_10lns5o>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8062,7 +8062,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_0benzr6" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1gcephz>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1gcephz>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8083,7 +8083,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "25" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1trqmrm>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1trqmrm>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8096,7 +8096,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_1tgnn10" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_05wpzu6>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_05wpzu6>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8127,7 +8127,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_14hujf0" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1aa9z3k>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1aa9z3k>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8140,11 +8140,11 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "Flow_0hc8ekt" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_17oyvha>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_17oyvha>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_0sz535z>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_0sz535z>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8170,7 +8170,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "ja" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_16ufl6b>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_16ufl6b>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8196,7 +8196,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1p6t313>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1p6t313>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
@@ -8331,7 +8331,7 @@
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "nein" .
 
-<https://w3id.org/gerps/ontology/process/nullActivity_1xjd64h>
+<https://w3id.org/gerps/ontology/process/99107108017000Activity_1xjd64h>
         <http://www.w3.org/ns/prov#qualifiedAssociation>
                 <https://w3id.org/gerps/ontology/process/QA99107108017000Participant_0rpk2hz> .
 
