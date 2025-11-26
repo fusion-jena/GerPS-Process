@@ -1,3 +1,0 @@
-- Prozess mit unique process id auf Diagramm verlinken (mittels BBO:id)
-- von Leila: ich bin nur zufällig darauf gestoßen in https://fusion-jena.github.io/GerPS-Process/index-de.html , GerPS-Prozess: Beschreibung diagram sollten ein paar links korrigiert werden e.g., link zwischen Actor und mg8: PublicOrganisation und Actor sollte ein rdf:subClassOf anstelle von rdf:subPropertyOf
-
