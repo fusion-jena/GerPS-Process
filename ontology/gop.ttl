@@ -277,6 +277,8 @@ bbo:has_resource rdf:type owl:ObjectProperty .
 
 ###  https://w3id.org/gerps/ontology/process/GPP_0000030
 :GPP_0000030 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000004 ;
+             rdfs:range xsd:string ;
              rdfs:comment "Die LeiKa-ID beschreibt den eindeutigen Identifikator für die im Leistungskatalog definierten Verwaltungsdienste."@de ,
                           "The LeiKaID describes the unique identifier for administrative services defined by the service catalog."@en ;
              rdfs:label "has LeiKa-ID"@en ,
