@@ -295,6 +295,16 @@ bbo:has_resource rdf:type owl:ObjectProperty .
                         "hat ein BPMN-Datei mit hash"@de .
 
 
+###  https://w3id.org/gerps/ontology/process/GPP_0000040
+:GPP_0000040 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000005 ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Der Prozess wird in einer gereinigten BPMN-Datei beschrieben, die inhaltlich Ziel und Schritte beibehält, aber mehrere kleinere und größere Probleme behebt, die das Parsen verhinderten."@de ,
+                          "The process is described in a cleaned BPMN file that preserves the aim and steps but fixes several minor and major issues that prevented parsing."@en ;
+             rdfs:label "has cleaned BPMN file with digest"@en ,
+                        "hat bereinigte BPMN-Datei mit hash"@de .
+
+
 ###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#id
 bbo:id rdf:type owl:DatatypeProperty .
 
