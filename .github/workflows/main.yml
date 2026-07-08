@@ -2,73 +2,49 @@ name: Deploy all ontology versions on pages
 
 on:
   push:
-    branches: [main]
+    tags:
+      - 'v*.*'
+      - 'v*.*.*'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: deploy-pages-${{ github.ref }}
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 60
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo content
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          fetch-depth: 0
 
-      - name: Set up Java (for WIDOCO)
-        uses: actions/setup-java@v4
+      - name: Prepare build environment
+        run: |
+          mkdir -p build
+          touch build/.nojekyll
+
+      - name: Run widoco
+        uses: docker://ghcr.io/fusion-jena/ontology-docs-deployer:main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          distribution: temurin
-          java-version: "17"
+          path: out/
 
-      - name: Install dependencies
-        run: |
-          set -euo pipefail
-          python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt
-          fi
-
-      # Keep your existing generation command(s) here.
-      # Replace the command below with what your repo currently runs.
-      - name: Generate all ontology docs
-        run: |
-          set -euo pipefail
-          # Example placeholder:
-          # python scripts/generate_all.py
-          # or: bash scripts/build.sh
-          echo "Running existing ontology generation commands..."
-          python scripts/generate_all.py
-
-      - name: Validate generated output
-        run: |
-          set -euo pipefail
-          test -d out || (echo "ERROR: out/ directory is missing" && exit 1)
-
-          if [ -z "$(find out -type f -print -quit)" ]; then
-            echo "ERROR: out/ exists but contains no files"
-            exit 1
-          fi
-
-          echo "Preview of generated files:"
-          # Safe with pipefail (avoids SIGPIPE issues from head)
-          find out -type f -print | sed -n '1,40p' | sed 's/^/  - /'
-
-      - name: Deploy to GitHub Pages (gh-pages branch)
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./out
-          force_orphan: false
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
