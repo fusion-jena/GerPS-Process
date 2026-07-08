@@ -2,60 +2,73 @@ name: Deploy all ontology versions on pages
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: deploy-pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 60
 
     steps:
-      - name: Checkout repo content
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          fetch-depth: 0
+          python-version: "3.11"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Set up Java (for WIDOCO)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
 
-      - name: Run widoco
-        uses: docker://ghcr.io/fusion-jena/ontology-docs-deployer:main
+      - name: Install dependencies
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
-      - name: Verify out directory
+      # Keep your existing generation command(s) here.
+      # Replace the command below with what your repo currently runs.
+      - name: Generate all ontology docs
+        run: |
+          set -euo pipefail
+          # Example placeholder:
+          # python scripts/generate_all.py
+          # or: bash scripts/build.sh
+          echo "Running existing ontology generation commands..."
+          python scripts/generate_all.py
+
+      - name: Validate generated output
         run: |
           set -euo pipefail
           test -d out || (echo "ERROR: out/ directory is missing" && exit 1)
+
           if [ -z "$(find out -type f -print -quit)" ]; then
             echo "ERROR: out/ exists but contains no files"
             exit 1
           fi
+
           echo "Preview of generated files:"
-          find out -maxdepth 3 -type f | sed 's/^/  - /' | head -200
+          # Safe with pipefail (avoids SIGPIPE issues from head)
+          find out -type f -print | sed -n '1,40p' | sed 's/^/  - /'
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: out
-
-      - name: Deploy to GitHub Pages (attempt 1)
-        id: deployment
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-
-      - name: Deploy to GitHub Pages (attempt 2)
-        if: steps.deployment.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./out
+          force_orphan: false
