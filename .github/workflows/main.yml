@@ -1,40 +1,61 @@
 name: Deploy all ontology versions on pages
+
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+(.[0-9]+)?'
+      - 'v*'
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
+
 jobs:
-  deploy:                                         # a free machine-readable name for this job
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest                        # specify the base operating system
+
     steps:
-      - name: Checkout repo content               # fetch the contents of the repository
+      - name: Checkout repo content
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Prepare build environment
-        run: |                                    # multiple Bash commands follow
-          mkdir -p build
-          touch build/.nojekyll
-      - name: Run widoco
-        uses: docker://ghcr.io/fusion-jena/ontology-docs-deployer:main
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Run widoco
+        uses: docker://ghcr.io/fusion-jena/ontology-docs-deployer:main
+
+      - name: Verify out directory
+        run: |
+          set -euo pipefail
+          test -d out || (echo "ERROR: out/ directory is missing" && exit 1)
+          if [ -z "$(find out -type f -print -quit)" ]; then
+            echo "ERROR: out/ exists but contains no files"
+            exit 1
+          fi
+          echo "Preview of generated files:"
+          find out -maxdepth 3 -type f | sed 's/^/  - /' | head -200
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload only "out" directory which contains the bundeled widoco versions
-          path: 'out/'
-      - name: Deploy to GitHub Pages
+          path: out
+
+      - name: Deploy to GitHub Pages (attempt 1)
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
