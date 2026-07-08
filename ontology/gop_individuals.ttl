@@ -1,4 +1,4 @@
-<https://www.gesetze-im-internet.de/sgb_10/__36.html>
+﻿<https://www.gesetze-im-internet.de/sgb_10/__36.html>
         a       <https://w3id.org/gerps/ontology/process/GPP_0000003> ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
                 "§ 36 SGB X" .
@@ -903,8 +903,6 @@
         a       <https://w3id.org/gerps/ontology/process/GPP_0000004> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Antrag Bürgergeld (bearbeiten) V0.3 bunt" , "Antrag Bürgergeld (bearbeiten) V0.5" ;
-        <https://w3id.org/gerps/ontology/process/GPP_0000022>
-                <https://w3id.org/gerps/ontology/process/process_lU9Xlw9sGT-uuladHwBaNlJjNSUn3k59QTCYOe2NutA> , <https://w3id.org/gerps/ontology/process/process_oKEJ1O_TxuandwBRE4oqZHdmmFgXJoGhggtKb6B07lo> ;
         <https://w3id.org/gerps/ontology/process/GPP_0000030>
                 "99107108017000" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
@@ -924,9 +922,11 @@
         <https://w3id.org/gerps/ontology/process/GPP_0000034>
                 "100169394a5da32507fff200714726ac" ;
         <https://w3id.org/gerps/ontology/process/GPP_0000038>
-                <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_16> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_10> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_02> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_12> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_05> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_08> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_15> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_01> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_14> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_11> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_04> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_07> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_13> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_06> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_09> , <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_03> ;
+                <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_16> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_10> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_02> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_12> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_05> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_08> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_15> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_01> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_14> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_11> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_04> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_07> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_13> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_06> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_09> , <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_03> ;
         <https://w3id.org/gerps/ontology/process/GPP_0000039>
-                <https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_101> ;
+                <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_detaillierungsstufe_20230301_101> ;
+        <https://w3id.org/gerps/ontology/process/GPP_0000041>
+                <https://w3id.org/gerps/ontology/process/99107108017000> ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "lU9Xlw9sGT-uuladHwBaNlJjNSUn3k59QTCYOe2NutA" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>
@@ -3070,9 +3070,11 @@
         <https://w3id.org/gerps/ontology/process/GPP_0000034>
                 "f9c05f2b675518272912980f4cf544e4" ;
         <https://w3id.org/gerps/ontology/process/GPP_0000038>
-                <:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_16> ;
+                <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_2010_04_01_16> ;
         <https://w3id.org/gerps/ontology/process/GPP_0000039>
-                <https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_102> ;
+                <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_detaillierungsstufe_20230301_102> ;
+        <https://w3id.org/gerps/ontology/process/GPP_0000041>
+                <https://w3id.org/gerps/ontology/process/99107108017000> ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#id>
                 "oKEJ1O_TxuandwBRE4oqZHdmmFgXJoGhggtKb6B07lo" ;
         <https://www.irit.fr/recherches/MELODI/ontologies/BBO#name>

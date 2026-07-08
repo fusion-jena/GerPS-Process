@@ -20,7 +20,7 @@ competency-questions:
       SELECT ?Prozess
       WHERE {
         FILTER(?Leistung=gpp:99107108017000)
-        ?Leistung gpp:GPP_0000022 ?Prozess.
+        ?Prozess gpp:GPP_0000041 ?Leistung .
       }
   -
     plain: "Which *process steps* are necessary to perform a *service*?"
@@ -31,7 +31,8 @@ competency-questions:
 
       SELECT ?Prozessschritt
       WHERE {
-        gpp:99107108017000 gpp:GPP_0000022 / gpp:GPP_0000023 ?Prozessschritt .
+        ?Prozess gpp:GPP_0000041 gpp:99107108017000 ;
+                 gpp:GPP_0000023 ?Prozessschritt .
       }
   -
     plain: "What is the first/last *process step* of a *process*?"
@@ -81,7 +82,8 @@ competency-questions:
 
       SELECT DISTINCT ?Resource
       WHERE {
-        gpp:99107108017000 gpp:GPP_0000022 / gpp:GPP_0000023  / gpp:GPP_0000024 ?Resource
+        ?Prozess gpp:GPP_0000041 gpp:99107108017000 ;
+                 gpp:GPP_0000023 / gpp:GPP_0000024 ?Resource .
       }
   -
     plain: "What is the *submission deadline* of a *document*?"

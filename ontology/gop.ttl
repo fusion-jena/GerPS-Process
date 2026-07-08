@@ -9,6 +9,7 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @base <https://w3id.org/gerps/ontology/process/> .
@@ -126,15 +127,15 @@ xsd:date rdf:type rdfs:Datatype .
                         "hat die Rechtsgrundlage"@de .
 
 
-###  https://w3id.org/gerps/ontology/process/GPP_0000022
-:GPP_0000022 rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf bbo:has_process ;
-             rdfs:domain :GPP_0000004 ;
-             rdfs:range :GPP_0000005 ;
-             rdfs:comment "Links a service to a process involved in offering it."@en ,
-                          "Verknüpft eine Leistung mit einem Prozess, der mit ihrem Angebot verbunden ist."@de ;
-             rdfs:label "has backing process"@en ,
-                        "hat verbundenen Prozess"@de .
+###  https://w3id.org/gerps/ontology/process/GPP_0000041
+:GPP_0000041 rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :GPP_0000005 ;
+             rdfs:range :GPP_0000004 ;
+             rdfs:comment "Links a process to the service it implements."@en ,
+                          "Verknüpft einen Prozess mit der Leistung, die er umsetzt."@de ;
+             rdfs:label "implements service"@en ,
+                        "setzt Leistung um"@de .
 
 
 ###  https://w3id.org/gerps/ontology/process/GPP_0000023
@@ -206,7 +207,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/gerps/ontology/process/GPP_0000038
 :GPP_0000038 rdf:type owl:ObjectProperty ;
              rdfs:domain :GPP_0000005 ;
-             rdfs:range :GPP_0000036 ;
+             rdfs:range <https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland> ;
              rdfs:comment "Gibt an, in welchen Verwaltungen ein Prozess Anwendung finden kann (beruhend auf den verwendeten Gesetzesgrundlagen)."@de ,
                           "Indicates in which administrations a process can be applied (due to the legal basis used)."@en ;
              rdfs:label "has administrative policy coding"@en ,
@@ -216,15 +217,11 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/gerps/ontology/process/GPP_0000039
 :GPP_0000039 rdf:type owl:ObjectProperty ;
              rdfs:domain :GPP_0000005 ;
-             rdfs:range :GPP_0000035 ;
+             rdfs:range <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_detaillierungsstufe> ;
              rdfs:comment "Links a process with its level of detail, which indicates what type of process it is according to the FIM methodology (e.g. master process, reference process)."@en ,
                           "Verknüpft einen Prozess mit seiner Detaillierungsstufe, welche angibt um welche Art von Prozess nach der FIM-Methodik es sich handelt (z.B. Stammprozess, Referenzprozesss)."@de ;
              rdfs:label "has level of detail"@en ,
                         "hat Detaillierungsstufe"@de .
-
-
-###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_process
-bbo:has_process rdf:type owl:ObjectProperty .
 
 
 ###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#has_resource
@@ -506,20 +503,12 @@ bbo:name rdf:type owl:DatatypeProperty .
                         "RuleMap"@en .
 
 
-###  https://w3id.org/gerps/ontology/process/GPP_0000035
-:GPP_0000035 rdf:type owl:Class ;
-             rdfs:comment "Die Detaillierungsstufe definiert den Bezug zu der föderalen Ebene des Prozesses sowie dessen Detaillierungsgrad. Dazu wird die relevante XÖV-Liste abgebildet, abrufbar unter https://www.xrepository.de/details/urn:xoev-de:xprozess:codeliste:detaillierungsstufe"@de ,
-                          "The level of detail defines the reference to the federal level of the process and its level of detail. It maps the XÖV-list available at https://www.xrepository.de/details/urn:xoev-de:xprozess:codeliste:detaillierungsstufe"@en ;
-             rdfs:label "Process detail level"@en ,
-                        "Prozessdetaillierungsstufe"@de .
+###  https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_detaillierungsstufe
+<https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_detaillierungsstufe> rdf:type owl:Class .
 
 
-###  https://w3id.org/gerps/ontology/process/GPP_0000036
-:GPP_0000036 rdf:type owl:Class ;
-             rdfs:comment "The Federal Republic of Germany is a federation of federal states. Most federal states comprise several counties and districts. This class represents the German federal states according to the list of municipalities of the Federal Statistical Office. This code is also part of the Official Municipality Code (AGS). The relevant XÖV list is displayed for this purpose, available at https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland"@en ,
-                          "Die Bundesrepublik Deutschland ist ein Zusammenschluss von Bundesländern. Die meisten Bundesländer umfassen mehrere Kreise und Bezirke. Diese Klasse stellt die deutschen Bundesländer nach dem Gemeindeverzeichnis des Statistischen Bundesamtes dar. Dieser Code ist auch Bestandteil des Amtlichen Gemeindeschlüssels (AGS). Dazu wird die relevante XÖV-Liste abgebildet, abrufbar unter https://www.xrepository.de/details/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:bundesland" ;
-             rdfs:label "Bundesland"@de ,
-                        "Federal state"@en .
+###  https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland
+<https://w3id.org/gerps/ontology/codelist/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland> rdf:type owl:Class .
 
 
 ###  https://www.irit.fr/recherches/MELODI/ontologies/BBO#Activity
@@ -560,7 +549,8 @@ bbo:Task rdf:type owl:Class .
                     prov:Role ;
            rdfs:comment "A result receiver is a person or company that benefits from the administrative service."@en ;
            rdfs:label "Ergebnissempfänger"@de ,
-                      "Result receiver"@en .
+                      "Result receiver"@en ;
+           skos:exactMatch <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_prozessrolle_20230301_4> .
 
 
 ###  https://w3id.org/gerps/ontology/process/GERPSE007
@@ -569,7 +559,8 @@ bbo:Task rdf:type owl:Class .
                     prov:Role ;
            rdfs:comment "The main actor is the public authority responsible to offer a certain public service."@en ;
            rdfs:label "Hauptakteur"@de ,
-                      "Main actor"@en .
+                      "Main actor"@en ;
+           skos:exactMatch <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_prozessrolle_20230301_2> .
 
 
 ###  https://w3id.org/gerps/ontology/process/GERPSE009
@@ -579,154 +570,8 @@ bbo:Task rdf:type owl:Class .
            rdfs:comment "Contributors are external public authorities that are involved in the processing of public services."@en ,
                         "Mitwirkende sind externe öffentliche Behörden, die an der Abwicklung von öffentlichen Dienstleistungen beteiligt sind."@de ;
            rdfs:label "Contributor"@en ,
-                      "Mitwirkender"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_01
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_01 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Schleswig-Holstein"@de ,
-                                                                                 "Schleswig-Holstein"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_02
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_02 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Hamburg"@de ,
-                                                                                 "Hamburg"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_03
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_03 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Lower Saxony"@en ,
-                                                                                 "Niedersachsen"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_04
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_04 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Bremen"@de ,
-                                                                                 "Bremen"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_05
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_05 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Nordrhein-Westfalen"@de ,
-                                                                                 "North Rhine-Westphalia"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_06
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_06 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Hesse"@en ,
-                                                                                 "Hessen"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_07
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_07 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Rheinland-Pfalz"@de ,
-                                                                                 "Rhineland-Palatinate"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_08
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_08 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Baden-Württemberg"@de ,
-                                                                                 "Baden-Württemberg"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_09
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_09 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Bavaria"@en ,
-                                                                                 "Bayern"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_10
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_10 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Saarland"@de ,
-                                                                                 "Saarland"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_11
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_11 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Berlin"@de ,
-                                                                                 "Berlin"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_12
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_12 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Brandenburg"@de ,
-                                                                                 "Brandenburg"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_13
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_13 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Mecklenburg-Vorpommern"@de ,
-                                                                                 "Mecklenburg-Vorpommern"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_14
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_14 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Sachsen"@de ,
-                                                                                 "Saxony"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_15
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_15 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Sachsen-Anhalt"@de ,
-                                                                                 "Saxony-Anhalt"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_16
-:urn_de_bund_destatis_bevoelkerungsstatistik_schluessel_bundesland_16 rdf:type owl:NamedIndividual ,
-                                                                               :GPP_0000036 ;
-                                                                      rdfs:label "Thuringia"@en ,
-                                                                                 "Thüringen"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_101
-:urn_xoev_de_fim_codeliste_detaillierungsstufe_101 rdf:type owl:NamedIndividual ,
-                                                            :GPP_0000035 ;
-                                                   rdfs:label "Master information"@en ,
-                                                              "Stamminformation"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_102
-:urn_xoev_de_fim_codeliste_detaillierungsstufe_102 rdf:type owl:NamedIndividual ,
-                                                            :GPP_0000035 ;
-                                                   rdfs:label "Reference information"@en ,
-                                                              "Referenzinformation"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_103
-:urn_xoev_de_fim_codeliste_detaillierungsstufe_103 rdf:type owl:NamedIndividual ,
-                                                            :GPP_0000035 ;
-                                                   rdfs:label "OZG-Referenzinformation"@de ,
-                                                              "OZG-reference information"@en .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_104
-:urn_xoev_de_fim_codeliste_detaillierungsstufe_104 rdf:type owl:NamedIndividual ,
-                                                            :GPP_0000035 ;
-                                                   rdfs:label "Local information"@en ,
-                                                              "Lokalinformation"@de .
-
-
-###  https://w3id.org/gerps/ontology/process/urn_xoev_de_fim_codeliste_detaillierungsstufe_105
-:urn_xoev_de_fim_codeliste_detaillierungsstufe_105 rdf:type owl:NamedIndividual ,
-                                                            :GPP_0000035 ;
-                                                   rdfs:label "Musterinformation"@de ,
-                                                              "Pattern information"@en .
+                      "Mitwirkender"@de ;
+           skos:exactMatch <https://w3id.org/gerps/ontology/codelist/urn_xoev_de_fim_codeliste_prozessrolle_20230301_3> .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
