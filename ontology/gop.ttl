@@ -310,6 +310,110 @@ bbo:id rdf:type owl:DatatypeProperty .
 bbo:name rdf:type owl:DatatypeProperty .
 
 
+###  https://w3id.org/gerps/ontology/process/GPP_0000042
+:GPP_0000042 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step (Referenzaktivitätengruppe Type 6: Daten zum Sachverhalt bearbeiten) to its bearbeitungsart codelist individual. The bearbeitungsart classifies the kind of data processing - e.g., creating, updating, archiving, or deleting data within the process."@en ,
+                          "Verknüpft einen Prozessschritt (Referenzaktivitätengruppe Typ 6: Daten zum Sachverhalt bearbeiten) mit dem Codelist-Individual der Bearbeitungsart. Die Bearbeitungsart klassifiziert die Art der Datenverarbeitung - z. B. Erstellen, Aktualisieren, Archivieren oder Löschen von Daten im Prozess."@de ;
+             rdfs:label "has processing mode"@en ,
+                        "hat Bearbeitungsart"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000043
+:GPP_0000043 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step to its uebermittlungsart (transmission mode) codelist individual. The uebermittlungsart specifies how information is transmitted in the process - e.g., electronically, by mail, by fax. The XProzess XSD defines separate XML elements for incoming and outgoing transmission modes, but the parser maps all of them to this single property. Consumers that need to distinguish direction must infer it from the Referenzaktivitätengruppen type context."@en ,
+                          "Verknüpft einen Prozessschritt mit dem Codelist-Individual der Übermittlungsart. Die Übermittlungsart gibt an, wie Informationen im Prozess übermittelt werden - z. B. elektronisch, per Post, per Fax. Der Parser bildet die verschiedenen XProzess-Elemente auf diese eine Eigenschaft ab; die Richtung ist aus dem Referenzaktivitätengruppen-Typ abzuleiten."@de ;
+             rdfs:label "has transmission mode"@en ,
+                        "hat Übermittlungsart"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000044
+:GPP_0000044 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step (Referenzaktivitätengruppe Type 3: Sachverhalt formell prüfen) to its formellePruefung codelist individual. The formellePruefung classifies the type of formal check performed - e.g., checking completeness, deadline compliance, or local jurisdiction. Multiple checks may be present."@en ,
+                          "Verknüpft einen Prozessschritt (Referenzaktivitätengruppe Typ 3: Sachverhalt formell prüfen) mit dem Codelist-Individual der formellen Prüfung. Die formelle Prüfung klassifiziert die Art der durchgeführten Prüfung - z. B. Prüfung auf Vollständigkeit, Fristeinhaltung oder örtliche Zuständigkeit. Es können mehrere Prüfungen vorhanden sein."@de ;
+             rdfs:label "has formal check"@en ,
+                        "hat formelle Prüfung"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000045
+:GPP_0000045 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step to its schriftformfunktion (written form function) codelist individual. The schriftformfunktion classifies the function that the written form serves under administrative law. Appears in Type 3 (formal check) and Type 6 (data processing) activity groups."@en ,
+                          "Verknüpft einen Prozessschritt mit dem Codelist-Individual der Schriftformfunktion. Die Schriftformfunktion klassifiziert die Funktion, die die Schriftform im Verwaltungsrecht erfüllt. Tritt in den Aktivitätengruppen-Typen 3 und 6 auf."@de ;
+             rdfs:label "has written form function"@en ,
+                        "hat Schriftformfunktion"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000046
+:GPP_0000046 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:range :GPP_0000017 ;
+             rdfs:comment "Intended to link a process step to a RuleMap resource representing decision rules referenced via cross-document Verweis elements in spezifischeAttribute3, 4, or 5. The parser currently creates RuleMap resources but does not link them through this property."@en ,
+                          "Soll einen Prozessschritt mit einer RuleMap-Ressource verknüpfen, die über cross-document Verweis-Elemente referenzierte Entscheidungsregeln repräsentiert. Der Parser erstellt derzeit RuleMap-Ressourcen, verknüpft sie aber nicht über diese Eigenschaft."@de ;
+             rdfs:label "has decision rule"@en ,
+                        "hat Entscheidungsregel"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000047
+:GPP_0000047 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Specifies the technology used to implement the business rule activity. Valid values per XProzess XSD are '##unspecified', '##WebService', or a URI identifying another technology or coordination protocol. Appears in activity group Types 3, 4, and 5."@en ,
+                          "Gibt die Technologie an, die zur Implementierung der Geschäftsregelaktivität verwendet wird. Gültige Werte gemäß XProzess-XSD sind '##unspecified', '##WebService' oder ein URI. Tritt in den Aktivitätengruppen-Typen 3, 4 und 5 auf."@de ;
+             rdfs:label "has implementation"@en ,
+                        "hat Implementierung"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000048
+:GPP_0000048 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Free-text description of the Hilfsmittel (auxiliary means) used in the activity: checklists, rule sets, formulas, and decision rules supporting the substantive review (Type 4) or decision (Type 5)."@en ,
+                          "Freitextliche Beschreibung der in der Aktivität verwendeten Hilfsmittel: Checklisten, Regelwerke, Formeln und Entscheidungsregeln, die die materielle Prüfung (Typ 4) oder Entscheidung (Typ 5) unterstützen."@de ;
+             rdfs:label "has tool"@en ,
+                        "hat Hilfsmittel"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000049
+:GPP_0000049 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step (Referenzaktivitätengruppe Type 5: Sachverhalt entscheiden) to its entscheidungsart codelist individual. The entscheidungsart classifies how the decision is made."@en ,
+                          "Verknüpft einen Prozessschritt (Referenzaktivitätengruppe Typ 5: Sachverhalt entscheiden) mit dem Codelist-Individual der Entscheidungsart. Die Entscheidungsart klassifiziert, wie die Entscheidung getroffen wird."@de ;
+             rdfs:label "has decision type"@en ,
+                        "hat Entscheidungsart"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000050
+:GPP_0000050 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "Indicates whether a Mitwirkungspflicht (duty to cooperate) exists for the third parties involved in the participation (Type 7: Beteiligung durchführen)."@en ,
+                          "Gibt an, ob für die an der Beteiligung beteiligten Dritten eine Mitwirkungspflicht besteht (Typ 7: Beteiligung durchführen)."@de ;
+             rdfs:label "has participation obligation"@en ,
+                        "hat Mitwirkungspflicht"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000051
+:GPP_0000051 rdf:type owl:ObjectProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:comment "Links a process step (Referenzaktivitätengruppe Type 7: Beteiligung durchführen) to its beteiligungsform codelist individual. The beteiligungsform classifies the manner in which third-party participation occurs."@en ,
+                          "Verknüpft einen Prozessschritt (Referenzaktivitätengruppe Typ 7: Beteiligung durchführen) mit dem Codelist-Individual der Beteiligungsform. Die Beteiligungsform klassifiziert die Art und Weise, in der die Beteiligung Dritter erfolgt."@de ;
+             rdfs:label "has participation form"@en ,
+                        "hat Beteiligungsform"@de .
+
+
+###  https://w3id.org/gerps/ontology/process/GPP_0000052
+:GPP_0000052 rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPP_0000006 ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Free-text description of an activity group that cannot be assigned to any of the other reference activity group types (1-7). Used exclusively with Referenzaktivitätengruppe Type 8."@en ,
+                          "Freitextliche Beschreibung einer Aktivitätengruppe, die keinem der anderen Referenzaktivitätengruppen-Typen (1-7) zugeordnet werden kann. Wird ausschließlich für Referenzaktivitätengruppe Typ 8 verwendet."@de ;
+             rdfs:label "has specific description"@en ,
+                        "hat spezifische Beschreibung"@de .
+
+
 #################################################################
 #    Classes
 #################################################################
